@@ -1,13 +1,13 @@
 <html>
      <head>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=1"/>
           <style>
                input{
                     font-size: 17px;
                }
           </style>
      </head>
-     <body>
+     <body onload="onload()">
 <form action="/action_page.php">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
@@ -16,4 +16,11 @@
   <input type="submit" value="Submit">
 </form>
      </body>
+     <script>
+          function onload(){
+     a = document.querySelector('[name=viewport]')
+a.setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0");
+          }
+     </script>
+     
 </html>
