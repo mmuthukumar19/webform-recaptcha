@@ -1,67 +1,62 @@
+
 <!-- saved from url=(0189)https://biginqa.localzoho.com/crm/WebFormServeServlet?rid=951c5c00a2e7b04d852e950a96b75558b015c9fcab841545fcbff7086ca279e3gid74dae2b2a28932ac1d70bd09d16603cdf9013b988cfb884b52b8b86590449245 -->
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <style type="text/css">
-      /* COMMON STYLES */
-      :root,
-      html {
-        font-size: 10px;
-      }
-      * {
-        padding: 0;
-        margin: 0;
-        outline: 0;
-      }
-      html,
-      body {
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">
+    /* COMMON STYLES */
+    :root,
+        html {
+        font-size: 10px; 
+    }
+    * {
+    padding: 0; 
+     margin: 0; 
+     outline: 0;}
+    html,
+    body {
         height: 100%;
         width: 100%;
         font-weight: normal;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background-color: #edf1f4;
+        background-color: #EDF1F4;
         font-size: 15px;
-      }
-      ul,
-      ol {
+    }
+    ul,
+    ol {
         list-style-position: inside;
-      }
-      textarea,
-      input[type="text"],
-      input[type="button"],
-      input[type="submit"],
-      input[type="date"] {
+    }
+    textarea,
+    input[type='text'],
+    input[type='button'],
+    input[type='submit'],
+    input[type='date'] {
         -webkit-appearance: none;
-      }
-      .link {
-        color: #1980d8;
+    }
+    .link{
+        color: #1980D8;
         cursor: pointer;
-      }
-      .cP {
+    }
+    .cP{
         cursor: pointer;
-      }
-      .flex-center-v {
+    }.flex-center-v{
         display: flex;
         align-items: center;
-      }
-      /* COMMON STYLES */
-      .wf-form-component {
+    }
+    /* COMMON STYLES */
+    .wf-form-component {
         padding: 30px 40px 60px;
-      }
-      .wf-form-paid {
+    }
+    .wf-form-paid {
         padding-bottom: 45px;
-      }
-      .wf-parent {
+    }
+    .wf-parent {
         padding: 30px 0;
         height: 100%;
         box-sizing: border-box;
-        overflow: auto;
-      }
-      .wf-wrapper * {
+        overflow: auto;}
+    .wf-wrapper * {
         box-sizing: border-box;
-      }
-      .wf-wrapper {
+    }
+    .wf-wrapper {
         width: 100%;
         max-width: 700px;
         border-radius: 10px;
@@ -70,53 +65,53 @@
         background-color: #fff;
         color: #222;
         box-shadow: 0px 0px 2px 0 #00000033;
-      }
-      .wf-header {
+    }
+    .wf-header {
         font-size: 22px;
         padding-bottom: 25px;
         font-weight: bold;
         word-break: break-word;
-      }
-      .wf-row {
+    }
+    .wf-row {
         margin-bottom: 25px;
-      }
-      .wf-row:last-child {
+    }
+    .wf-row:last-child{
         margin-bottom: 0;
-      }
-      .wf-label {
+    }
+    .wf-label {
         padding: 7px 0;
         word-break: break-word;
-      }
-      .wf-field {
+    }
+    .wf-field {
         text-align: left;
         word-break: break-word;
         border: 0;
         position: relative;
-      }
-      .wf-field-inner {
+    }
+    .wf-field-inner {
         position: relative;
         display: flex;
         flex: 1;
-      }
-      .wf-field-input:focus {
+    }
+    .wf-field-input:focus {
         border: 1px solid #30c384;
-      }
-      .wf-input-focus.wf-field::after {
+    }
+    .wf-input-focus.wf-field::after {
         opacity: 1;
-      }
-      .wf-field-error-active {
+    }
+    .wf-field-error-active{
         margin-bottom: -10px;
-      }
-      .wf-input-focus.wf-field::after,
-      .wf-field-error-active.wf-field .wf-field-error {
+    }
+    .wf-input-focus.wf-field::after,
+    .wf-field-error-active.wf-field .wf-field-error {
         display: block;
-      }
-      .wf-field-error-active.wf-field .wf-field-input {
-        border: 1px solid #fd6b6d;
-        box-shadow: 0 0 1px 1px #f4a2a2;
-      }
-      .wf-field-mandatory .wf-field-inner::before {
-        content: "";
+    }
+    .wf-field-error-active.wf-field .wf-field-input {
+        border: 1px solid #FD6B6D;
+        box-shadow: 0 0 1px 1px #F4A2A2;
+    }
+    .wf-field-mandatory .wf-field-inner::before {
+        content: '';
         position: absolute;
         left: 0px;
         background-color: #ff6a6a;
@@ -127,18 +122,18 @@
         z-index: 2;
         top: 0;
         bottom: 0;
-      }
-      .wf-field-input,
-      .wf-field-dropdown {
+    }
+    .wf-field-input,
+    .wf-field-dropdown {
         width: 100%;
-        border: 1px solid #bdc8d3;
+        border: 1px solid #BDC8D3;
         border-radius: 4px;
         padding: 10px 15px;
         min-height: 38px;
         font-size: 15px;
         font-family: inherit;
-      }
-      select:not([data-wform-field="select-multiple"]) {
+    }
+    select:not([data-wform-field='select-multiple']) {
         -webkit-appearance: none;
         -moz-appearance: none;
         background: transparent;
@@ -147,105 +142,102 @@
         background-position-x: 99%;
         background-color: #fff;
         min-width: 70px;
-      }
-      input,
-      select {
+    }
+    input,
+    select {
         background-color: #fff;
-      }
-      .wf-field-item {
+    }
+    .wf-field-item {
         min-height: 38px;
-      }
-      .wf-time-field-wrapper {
+    }
+    .wf-time-field-wrapper {
         display: flex;
         flex: 1;
-      }
-      .wf-time-field-wrapper select {
+    }
+    .wf-time-field-wrapper select {
         margin-left: 10px;
-      }
-      .wf-form-component .wf-field-error,
-      .wf-form-component .wf-field-help-text {
+    }
+    .wf-form-component .wf-field-error,
+        .wf-form-component .wf-field-help-text {
         text-align: left;
-      }
-      .wf-field-error {
-        color: #ff5050;
+    }
+    .wf-field-error {
+        color: #FF5050;
         font-size: 12px;
         margin-top: 4px;
         display: none;
-        animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+        animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
         transform: translate3d(0, 0, 0);
         backface-visibility: hidden;
         perspective: 1000px;
-      }
-      .wf-field-help-text {
+    }
+    .wf-field-help-text {
         color: #515159;
         font-size: 12px;
         margin-top: 5px;
-      }
-      .wf-field-help-text-link {
+        }
+    .wf-field-help-text-link{
         text-decoration: none;
-      }
-      .wf-field-checkbox {
+    }
+    .wf-field-checkbox {
         cursor: pointer;
         border-radius: 3px;
         min-width: 14px;
         min-height: 20px;
         box-sizing: initial;
-        accent-color: #31c486;
+        accent-color: #31C486;
         margin-right: 10px;
         margin-bottom: auto;
-      }
-      .wf-field-dropdown-date {
+    }
+    .wf-field-dropdown-date {
         padding: 8px 12px;
         border-radius: 4px;
         font-size: 15px;
         cursor: pointer;
-      }
-      .wf-field-dropdown-date {
-        border: 1px solid #bdc8d3;
-      }
-      .wf-field-dropdown-date:hover {
-        border: 1px solid #65c199;
-      }
-      .wform-field-item-upload-input {
+    }
+    .wf-field-dropdown-date {
+        border: 1px solid #BDC8D3;
+        }
+    .wf-field-dropdown-date:hover {
+        border: 1px solid #65C199;
+    }
+    .wform-field-item-upload-input {
         min-height: 5rem;
-        background-color: #fbfcfd;
+        background-color: #FBFCFD;
         border: 1px dashed #bdc8d3;
         line-height: 2.1;
         cursor: pointer;
-      }
-      .wform-field-item-upload-input:focus {
+    }
+    .wform-field-item-upload-input:focus {
         border: 1px dashed #bdc8d3;
-      }
-      .wform-file-upload-input-label {
+    }
+    .wform-file-upload-input-label {
         background-color: #fff;
-        background-image: linear-gradient(to top, #f5f8fa, #ffffff);
+        background-image: linear-gradient(to top, #F5F8FA, #ffffff);
         color: #212129;
         border-color: #d3dbe3;
-        border: 1px solid #d3dbe3;
-        border-radius: 4px;
+        border: 1px solid #d3dbe3;border-radius: 4px;
         padding: 0.7rem 2rem;
         font-size: 1.4rem;
         right: 1rem;
         transform: translateY(-50%);
         top: 50%;
         position: absolute;
-      }
-      input[type="file"]::file-selector-button,
-      input[type="file"]::-webkit-file-upload-button {
-        opacity: 0;
-        width: 0;
-        height: 28px;
-      }
-      .wf-row[data-ux-field-appearance="captcha"] .wf-field {
+        }
+    input[type='file']::file-selector-button, input[type='file']::-webkit-file-upload-button{
+     opacity: 0; 
+     width: 0;
+     height: 28px;
+    }.wf-row[data-ux-field-appearance='captcha'] .wf-field{
         display: flex;
         align-items: center;
-      }
-      .wform-field-item-captcha-input {
+    }
+    .wform-field-item-captcha-input{
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-      }
-      .wf-field-captcha-img-wrap {
-        border: 1px solid #bdc8d3;
+    }
+    .wf-field-captcha-img-wrap{
+        border: 1px solid #BDC8D3;
         border-radius: 4px;
         border-left: 0;
         border-top-left-radius: 0;
@@ -253,93 +245,92 @@
         height: initial;
         overflow: hidden;
         min-width: 120px;
-      }
-      .wf-field-captcha-img {
+    }
+    .wf-field-captcha-img{
         height: 38px;
         width: 100%;
-      }
-      .reload-img {
+    }
+    .reload-img{
         font-size: 23px;
-        color: #4b5569;
+        color: #4B5569;
         margin-right: 5px;
-      }
-      .reload-captcha {
+    }
+    .reload-captcha{
         margin-left: 10px;
-        user-select: none;
-      }
-      .wf-btn {
+        user-select: none
+    }
+    .wf-btn {
         padding: 10px 20px;
         border-radius: 4px;
         font-size: 15px;
         cursor: pointer;
         font-weight: bold;
         font-family: inherit;
-      }
-      .wform-btn-wrap {
+    }
+    .wform-btn-wrap {
         display: flex;
         align-items: center;
         justify-content: flex-end;
         flex: 1;
-      }
-      .wform-poweredby-container {
+    }
+    .wform-poweredby-container {
         position: absolute;
         left: 0;
         bottom: 0;
         border-top-right-radius: 10px;
         border-bottom-left-radius: 10px;
-        background-color: #23384f;
+        background-color: #23384F;
         font-size: 12px;
         padding: 5px 8px;
         font-family: sans-serif;
         display: flex;
         align-items: center;
-      }
-      /* MultiPicklist Styles */
-      .multiselect.wf-field-dropdown {
+    }
+/* MultiPicklist Styles */
+    .multiselect.wf-field-dropdown {
         padding: 0;
         cursor: text;
-      }
-      .multiselect.dropbox-active {
+    }
+    .multiselect.dropbox-active{
         border-color: #30c384;
         border-radius: 4px 4px 0 4px;
         border-right: 0 !important;
-      }
-      .selected-options.selected-options-field {
+    }
+    .selected-options.selected-options-field {
         display: none;
-      }
-      .selected-options {
+    }
+    .selected-options{
         max-height: 150px;
         overflow: auto;
         padding: 3px 5px 7px 5px;
         border-right: 1px solid #30c384;
         border-radius: 4px 4px 0 0;
         border-bottom: 0;
-      }
-      .selected-options.drp-dwn-no-val {
+    }
+    .selected-options.drp-dwn-no-val{
         border-right: unset !important;
-      }
-      .selected-options.drop-box-closed {
+    }
+    .selected-options.drop-box-closed{
         border-right: unset;
-      }
-      .dropdown-input.drop-box-closed {
+    }
+    .dropdown-input.drop-box-closed{
         border-bottom-right-radius: 4px;
-      }
-      .dropdown-input.drop-box-active {
+    }
+    .dropdown-input.drop-box-active{
         border-top-right-radius: 0 !important;
-      }
-      ::placeholder {
+    }
+    ::placeholder{
         font-size: 12px;
-      }
-      .dN {
+    }
+    .dN{
         display: none !important;
-      }
-      .dropdown {
+    }
+    .dropdown {
         position: relative;
         display: inline-block;
         width: 100%;
-        /* padding: 6px 0 0; */
-      }
-      .dropdown-input {
+    }
+    .dropdown-input{
         width: 100%;
         border: none;
         outline: none;
@@ -347,999 +338,703 @@
         padding: 5px;
         border-radius: 4px;
         border-radius: 4px 4px 0 0;
-        /* border-top-right-radius: 0 !important; */
-        /* border: 1px solid #BDC8D3; */
-        /* border-top: 0;
-        border-bottom: 0; */
-      }
-      .dropdown-menu {
+        padding-left: 14px;
+    }
+    .dropdown-menu {
         position: absolute;
         display: none;
         background-color: #fff;
-        border: 1px solid #bdc8d3;
+        border: 1px solid #BDC8D3;
         border-radius: 0 0 5px 5px;
         max-height: 100px;
         overflow-y: auto;
         width: 100%;
-      }
-      .dropdown.open .dropdown-menu {
+    }
+    .dropdown.open .dropdown-menu {
         display: block;
-      }
-      .dropdown-menu.dropdown-focus {
+    }
+    .dropdown-menu.dropdown-focus{
         border-color: #30c384;
-        border-top: 1px solid #e6ebf1;
-      }
-      .multiselect.dropbox-active .dropdown-input {
+        border-top: 1px solid #E6EBF1;
+    }
+    .multiselect.dropbox-active .dropdown-input{
         border: 1px solid #30c384;
-        /* border-radius: 4px 0 0 0; */
         border-top: 0;
         border-bottom: 0;
-        /* border-radius: 4px 4px 0 0; */
         padding-bottom: 17px;
         padding-top: 19px;
-      }
-      .multi-tag {
-        background-color: #ceebff;
+    }
+    .multi-tag{
+        background-color: #CEEBFF;
         padding: 2px 5px 3px 10px;
         border-radius: 15px;
         margin: 5px 5px 0 2px;
         display: inline-flex;
-      }
-      .tag-data-val {
+    }
+    .tag-data-val{
         cursor: default;
         max-width: 550px;
-      }
-      .no-results {
+    }
+    .no-results{
         cursor: default !important;
-      }
-      .no-results:hover {
+    }
+    .no-results:hover{
         background-color: unset !important;
-      }
-      .opt-hide {
+    }
+    .opt-hide{
         display: none;
-      }
-      .opt-show {
+    }
+    .opt-show{
         display: block;
-      }
-      .tag-close-btn {
+    }
+    .tag-close-btn{
         margin-left: 3px;
         padding: 0px 4px 0px;
         border-radius: 50%;
         opacity: 0.5;
         font-weight: bold;
         cursor: pointer;
-      }
-      .multi-tag:hover .tag-close-btn {
-        /* background-color: #fff; */
+    }
+    .multi-tag:hover .tag-close-btn{
         opacity: 1;
-      }
-      .option {
-        padding: 10px;
+    }
+    .option{
+        padding: 10px 14px;
         cursor: pointer;
         border-bottom: 1px solid #f0f5f8;
-      }
-      .option:hover {
+    }
+    .option:hover{
         background-color: #f5f8fa;
-      }
-      .input-not-active {
+    }
+    .input-not-active{
         display: none;
-      }
-      .ellipsis {
+    }
+    .ellipsis {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-      }
-      /* MultiPicklist Styles */
+    }
+/* MultiPicklist Styles */
 
-      /* ==================== *** Form Alignment *** ==================== */
-      .wf-form-component:not([data-ux-form-alignment="top"]) .wf-row {
+    /* ==================== *** Form Alignment *** ==================== */
+    .wf-form-component:not([data-ux-form-alignment='top']) .wf-row {
         display: flex;
-      }
-      .wf-form-component:not([data-ux-form-alignment="top"]) .wf-label {
+    }
+    .wf-form-component:not([data-ux-form-alignment='top']) .wf-label {
         word-break: break-word;
         width: 30%;
         padding: 1.2rem 2rem 0;
-      }
-      .wf-form-component[data-ux-form-alignment="left"] .wf-label {
+    }
+    .wf-form-component[data-ux-form-alignment='left'] .wf-label {
         text-align: left;
         padding-left: 0;
-      }
-      .wf-form-component[data-ux-form-alignment="right"] .wf-label {
+    }
+    .wf-form-component[data-ux-form-alignment='right'] .wf-label {
         text-align: right;
-      }
-      .wf-form-component[data-ux-form-alignment="center"] .wf-label {
+    }
+    .wf-form-component[data-ux-form-alignment='center'] .wf-label {
         text-align: center;
-      }
-      .wf-form-component:not([data-ux-form-alignment="top"]) .wf-field {
+    }
+    .wf-form-component:not([data-ux-form-alignment='top']) .wf-field {
         width: 70%;
-      }
-      .wf-form-component[data-ux-form-alignment="top"] .wform-btn-wrap {
+    }
+    .wf-form-component[data-ux-form-alignment='top'] .wform-btn-wrap {
         justify-content: flex-start;
-      }
-      .wf-form-component[data-ux-form-alignment="top"]
-        .wf-label[data-ux-empty-label="true"] {
+    }
+    .wf-form-component[data-ux-form-alignment='top'] .wf-label[data-ux-empty-label='true']{
         padding: 0;
-      }
-      .wf-form-component[data-ux-form-alignment="top"] .reload-captcha {
+    }
+    .wf-form-component[data-ux-form-alignment='top'] .reload-captcha{
         text-align: right;
-      }
-      .wf-row[data-ux-field-appearance="captcha"] .wf-field-inner {
+    }
+    .wf-row[data-ux-field-appearance='captcha'] .wf-field-inner{
         height: 38px;
-      }
-      .wf-row[data-ux-field-appearance="captcha"]
-        .wf-field.wf-field-error-active {
+    }
+    .wf-row[data-ux-field-appearance='captcha'] .wf-field.wf-field-error-active{
         flex-wrap: wrap;
-      }
-      .wf-row[data-ux-field-appearance="captcha"] .wf-field-error {
+    }
+    .wf-row[data-ux-field-appearance='captcha'] .wf-field-error{
         flex-basis: 100%;
+        width:100%;
+    }
+    /* ==================== *** Form Alignment ends *** ==================== */
+    
+    /* ==================== *** css animations *** ==================== */
+    @keyframes shake {
+        10%,90% {transform: translate3d(-1px, 0, 0);}
+        20%,80% {transform: translate3d(2px, 0, 0);}
+        30%,50%,70% {transform: translate3d(-4px, 0, 0);}
+        40%,60% {transform: translate3d(4px, 0, 0);}
+    }
+    /* ==================== *** css animations ends *** ==================== */
+    
+    /* ==================== *** Mediaquery *** ==================== */
+    @media screen and (max-width: 1024px) {
+        .wf-wrapper {
+        max-width: 700px;
+        width: calc(100% - 40px);
+        border: 0;
+    }
+        .wf-field input[type=text],
+        .wf-field select,
+        .wf-field textarea {
+            width: 100% !important;
+        }
+        .wf-label:empty {
+            display: none;
+        }
+    .wf-field-checkbox {
+        min-width: 18px;
+        min-height: 18px;
+    }
+    }
+    @media screen and (max-width: 768px) {
+        .wf-wrapper {
+        max-width: 700px;
+        width: calc(100% - 40px);
+        border: 0;
+    }
+    .wf-field input[type=text],
+        .wf-field select,
+        .wf-field textarea {
+        width: 100% !important;
+        }
+    .wf-label:empty {
+        display: none;
+        }
+    }
+    @media screen and (max-width: 590px) {
+    .wf-parent {
+        padding: 20px 0;
+    }
+    .wf-wrapper {
+        width: calc(100% - 40px) !Important;
+        border: 0;
+    }
+    .wf-form-component {
+        padding: 20px;
+        padding-bottom:60px;
+    }
+    .wf-field input[type=text],
+    .wf-field select,
+    .wf-field textarea {
+        width: 100% !important;
+    }
+    .wf-label:empty {
+        display: none;
+    }
+    .wf-row[data-ux-field-appearance='date-time'] .wf-field-inner{
+        flex-direction: column;
+    }
+    .wf-row[data-ux-field-appearance='date-time'] .wf-time-field-wrapper{
+        margin-top: 10px;
+    }
+    .wf-row[data-ux-field-appearance='date-time'] .wf-field-item:first-child{
+        margin-left: 0;
+    }
+    .wf-row[data-ux-field-appearance='date-time'] .wf-field-item{
+        flex: 1;
+    }
+    .wf-row[data-ux-field-appearance='captcha'] .wf-field{
+        flex-direction: column;
+    }
+    .wf-row[data-ux-field-appearance='captcha'] .reload-captcha{
+        margin-left: auto;
+    }
+    .wf-row[data-ux-field-appearance='captcha'] .wf-field-inner{
         width: 100%;
-      }
-      /* ==================== *** Form Alignment ends *** ==================== */
-
-      /* ==================== *** css animations *** ==================== */
-      @keyframes shake {
-        10%,
-        90% {
-          transform: translate3d(-1px, 0, 0);
-        }
-        20%,
-        80% {
-          transform: translate3d(2px, 0, 0);
-        }
-        30%,
-        50%,
-        70% {
-          transform: translate3d(-4px, 0, 0);
-        }
-        40%,
-        60% {
-          transform: translate3d(4px, 0, 0);
-        }
-      }
-      /* ==================== *** css animations ends *** ==================== */
-
-      /* ==================== *** Mediaquery *** ==================== */
-      @media screen and (max-width: 1024px) {
-        .wf-wrapper {
-          max-width: 700px;
-          width: calc(100% - 40px);
-          border: 0;
-        }
-        .wf-field input[type="text"],
-        .wf-field select,
-        .wf-field textarea {
-          width: 100% !important;
-        }
-        .wf-label:empty {
-          display: none;
-        }
-        .wf-field-checkbox {
-          min-width: 18px;
-          min-height: 18px;
-        }
-      }
-      @media screen and (max-width: 768px) {
-        .wf-wrapper {
-          max-width: 700px;
-          width: calc(100% - 40px);
-          border: 0;
-        }
-        .wf-field input[type="text"],
-        .wf-field select,
-        .wf-field textarea {
-          width: 100% !important;
-        }
-        .wf-label:empty {
-          display: none;
-        }
-      }
-      @media screen and (max-width: 590px) {
-        .wf-parent {
-          padding: 20px 0;
-        }
-        .wf-wrapper {
-          width: calc(100% - 40px) !important;
-          border: 0;
-        }
-        .wf-form-component {
-          padding: 20px;
-          padding-bottom: 60px;
-        }
-        .wf-field input[type="text"],
-        .wf-field select,
-        .wf-field textarea {
-          width: 100% !important;
-        }
-        .wf-label:empty {
-          display: none;
-        }
-        .wf-row[data-ux-field-appearance="date-time"] .wf-field-inner {
-          flex-direction: column;
-        }
-        .wf-row[data-ux-field-appearance="date-time"] .wf-time-field-wrapper {
-          margin-top: 10px;
-        }
-        .wf-row[data-ux-field-appearance="date-time"]
-          .wf-field-item:first-child {
-          margin-left: 0;
-        }
-        .wf-row[data-ux-field-appearance="date-time"] .wf-field-item {
-          flex: 1;
-        }
-        .wf-row[data-ux-field-appearance="captcha"] .wf-field {
-          flex-direction: column;
-        }
-        .wf-row[data-ux-field-appearance="captcha"] .reload-captcha {
-          margin-left: auto;
-        }
-        .wf-row[data-ux-field-appearance="captcha"] .wf-field-inner {
-          width: 100%;
-        }
-      }
-      /* ==================== *** Mediaquery ends *** ==================== */
+    }
+    }
+    /* ==================== *** Mediaquery ends *** ==================== */
     </style>
-  </head>
-  <body>
-    <div class="wf-parent" style="background-color: #eaeef2">
-      <div class="wf-wrapper" id="BiginWebToRecordFormDiv1669156000000981002">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <form
-          id="BiginWebToRecordForm1669156000000981002"
-          name="BiginWebToRecordForm1669156000000981002"
-          class="wf-form-component wf-form-paid"
-          data-ux-form-alignment="top"
-          style="font-family: Arial; position: relative; font-size: 15px"
-          method="POST"
-          enctype="multipart/form-data"
-          onsubmit='javascript:document.charset="UTF-8"; return validateForm1669156000000981002()'
-          accept-charset="UTF-8"
-          action="https://biginqa.localzoho.com/crm/WebForm"
-        >
-          <!-- Do not remove this code. -->
-          <input
-            type="text"
-            style="display: none"
-            name="xnQsjsdp"
-            value="74dae2b2a28932ac1d70bd09d16603cdf9013b988cfb884b52b8b86590449245"
-          />
-          <input type="hidden" name="zc_gad" id="zc_gad" value="" />
-          <input
-            type="text"
-            style="display: none"
-            name="xmIwtLD"
-            value="951c5c00a2e7b04d852e950a96b75558b015c9fcab841545fcbff7086ca279e3"
-          />
-          <input
-            type="text"
-            style="display: none"
-            name="actionType"
-            value="Q29udGFjdHM="
-          />
-          <input
-            type="text"
-            style="display: none"
-            name="returnURL"
-            value="null"
-          />
-          <div class="wf-header">Accident Report Forms</div>
-          <div id="elementDiv1669156000000981002" class="wf-form-wrapper">
-            <div class="wf-row">
-              <div class="wf-label">First Name</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    name="First Name"
-                    maxlength="40"
-                    type="text"
-                    value=""
-                    class="wf-field-item wf-field-input"
-                    oninput="removeError(this)"
-                  />
-                </div>
+    </head><body><div class="wf-parent" style="background-color: #EAEEF2">
+        <div class="wf-wrapper" id="BiginWebToRecordFormDiv1669156000000981002">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <form id="BiginWebToRecordForm1669156000000981002" name="BiginWebToRecordForm1669156000000981002" class="wf-form-component wf-form-paid" data-ux-form-alignment="top" style="font-family: Arial;position: relative;font-size:15px;" method="POST" enctype="multipart/form-data" onsubmit="javascript:document.charset=&quot;UTF-8&quot;; return validateForm1669156000000981002()" accept-charset="UTF-8" action="https://biginqa.localzoho.com/crm/WebForm">
+    <!-- Do not remove this code. -->
+         <input type="text" style="display:none;" name="xnQsjsdp" value="74dae2b2a28932ac1d70bd09d16603cdf9013b988cfb884b52b8b86590449245">
+         <input type="hidden" name="zc_gad" id="zc_gad" value="">
+         <input type="text" style="display:none;" name="xmIwtLD" value="951c5c00a2e7b04d852e950a96b75558b015c9fcab841545fcbff7086ca279e3">
+         <input type="text" style="display:none;" name="actionType" value="Q29udGFjdHM=">
+         <input type="text" style="display:none;" name="returnURL" value="null">
+         <div class="wf-header">Accident Report Forms</div>
+         <div id="elementDiv1669156000000981002" class="wf-form-wrapper">
+              <div class="wf-row">  
+                   <div class="wf-label">First Name</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input name="First Name" maxlength="40" type="text" value="" class="wf-field-item wf-field-input" oninput="removeError(this)">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">Last Name</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    name="Last Name"
-                    maxlength="80"
-                    type="text"
-                    value=""
-                    class="wf-field-item wf-field-input"
-                    oninput="removeError(this)"
-                  />
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">Last Name</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input name="Last Name" maxlength="80" type="text" value="" class="wf-field-item wf-field-input" oninput="removeError(this)">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">Email</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    fvalidate="true"
-                    ftype="email"
-                    name="Email"
-                    maxlength="100"
-                    type="text"
-                    value=""
-                    class="wf-field-item wf-field-input"
-                    oninput="removeError(this)"
-                  />
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">Email</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input fvalidate="true" ftype="email" name="Email" maxlength="100" type="text" value="" class="wf-field-item wf-field-input" oninput="removeError(this)">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">Mobile</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    fvalidate="true"
-                    ftype="mobile"
-                    name="Mobile"
-                    maxlength="30"
-                    type="text"
-                    value=""
-                    class="wf-field-item wf-field-input"
-                    oninput="removeError(this)"
-                  />
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">Mobile</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input fvalidate="true" ftype="mobile" name="Mobile" maxlength="30" type="text" value="" class="wf-field-item wf-field-input" oninput="removeError(this)">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">Phone</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    fvalidate="true"
-                    ftype="mobile"
-                    name="Phone"
-                    maxlength="50"
-                    type="text"
-                    value=""
-                    class="wf-field-item wf-field-input"
-                    oninput="removeError(this)"
-                  />
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">Phone</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input fvalidate="true" ftype="mobile" name="Phone" maxlength="50" type="text" value="" class="wf-field-item wf-field-input" oninput="removeError(this)">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">Home Phone</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    fvalidate="true"
-                    ftype="mobile"
-                    name="Home Phone"
-                    maxlength="30"
-                    type="text"
-                    value=""
-                    class="wf-field-item wf-field-input"
-                    oninput="removeError(this)"
-                  />
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">Home Phone</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input fvalidate="true" ftype="mobile" name="Home Phone" maxlength="30" type="text" value="" class="wf-field-item wf-field-input" oninput="removeError(this)">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">Description</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <textarea
-                    name="Description"
-                    maxlength="32000"
-                    type="text"
-                    class="wf-field-item wf-field-input"
-                    style="resize: none"
-                    oninput="removeError(this)"
-                  ></textarea>
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">Description</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <textarea name="Description" maxlength="32000" type="text" class="wf-field-item wf-field-input" style="resize: none;" oninput="removeError(this)"></textarea>
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">Mailing Street</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    name="Mailing Street"
-                    maxlength="250"
-                    type="text"
-                    value=""
-                    class="wf-field-item wf-field-input"
-                    oninput="removeError(this)"
-                  />
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">Mailing Street</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input name="Mailing Street" maxlength="250" type="text" value="" class="wf-field-item wf-field-input" oninput="removeError(this)">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">pick</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <select
-                    name="CONTACTCF1"
-                    class="wf-field-item wf-field-dropdown"
-                    data-wform-field="select"
-                    onchange="removeError(this);"
-                  >
-                    <option value="-None-">-None-</option>
-                    <option value="asdf">asdf</option>
-                    <option value="asdfrhgrf">asdfrhgrf</option>
-                    <option value="asdfasfegdg">asdfasfegdg</option>
-                    <option value="asdfasdfh">asdfasdfh</option>
-                    <option value="asdfsafhthh">asdfsafhthh</option>
-                    <option value="asdfasdfdfd">asdfasdfdfd</option>
-                    <option value="asdfasdfsdfasf">asdfasdfsdfasf</option>
-                    <option value="asdfadsfasdfsadf">asdfadsfasdfsadf</option>
-                  </select>
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">pick</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <select name="CONTACTCF1" class="wf-field-item wf-field-dropdown" data-wform-field="select" onchange="removeError(this);">
+                             <option value="-None-">-None-</option>
+                             <option value="asdf">asdf</option>
+                             <option value="asdfrhgrf">asdfrhgrf</option>
+                             <option value="asdfasfegdg">asdfasfegdg</option>
+                             <option value="asdfasdfh">asdfasdfh</option>
+                             <option value="asdfsafhthh">asdfsafhthh</option>
+                             <option value="asdfasdfdfd">asdfasdfdfd</option>
+                             <option value="asdfasdfsdfasf">asdfasdfsdfasf</option>
+                             <option value="asdfadsfasdfsadf">asdfadsfasdfsadf</option>
+                        </select>
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">datee</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    fvalidate="true"
-                    ftype="date"
-                    type="date"
-                    name="CONTACTCF81"
-                    maxlength="20"
-                    value=""
-                    placeholder="MM/dd/yyyy"
-                    class="wf-field-item wf-field-input wf-field-item-date"
-                    onchange="removeError(this);"
-                  />
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">datee</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input fvalidate="true" ftype="date" type="date" name="CONTACTCF81" maxlength="20" value="" placeholder="MM/dd/yyyy" class="wf-field-item wf-field-input wf-field-item-date" onchange="removeError(this);">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">numb</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    fvalidate="true"
-                    ftype="number"
-                    name="CONTACTCF51"
-                    maxlength="9"
-                    type="text"
-                    value=""
-                    class="wf-field-item wf-field-input"
-                    oninput="removeError(this)"
-                  />
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">numb</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input fvalidate="true" ftype="number" name="CONTACTCF51" maxlength="9" type="text" value="" class="wf-field-item wf-field-input" oninput="removeError(this)">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">currencysd</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    name="CONTACTCF66"
-                    maxlength="16"
-                    type="text"
-                    value=""
-                    class="wf-field-item wf-field-input"
-                    oninput="removeError(this)"
-                  />
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">currencysd</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input name="CONTACTCF66" maxlength="16" type="text" value="" class="wf-field-item wf-field-input" oninput="removeError(this)">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">mail</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    fvalidate="true"
-                    ftype="email"
-                    name="CONTACTCF4"
-                    maxlength="100"
-                    type="text"
-                    value=""
-                    class="wf-field-item wf-field-input"
-                    oninput="removeError(this)"
-                  />
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">mail</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input fvalidate="true" ftype="email" name="CONTACTCF4" maxlength="100" type="text" value="" class="wf-field-item wf-field-input" oninput="removeError(this)">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">phonee</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    fvalidate="true"
-                    ftype="mobile"
-                    name="CONTACTCF5"
-                    maxlength="20"
-                    type="text"
-                    value=""
-                    class="wf-field-item wf-field-input"
-                    oninput="removeError(this)"
-                  />
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">phonee</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input fvalidate="true" ftype="mobile" name="CONTACTCF5" maxlength="20" type="text" value="" class="wf-field-item wf-field-input" oninput="removeError(this)">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">date time</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    fvalidate="true"
-                    ftype="datetime"
-                    type="date"
-                    name="CONTACTCF116"
-                    maxlength="120"
-                    value=""
-                    placeholder="MM/dd/yyyy"
-                    class="wf-field-item wf-field-input wf-field-item-date"
-                    onchange="removeError(this);"
-                  />
-                  <div class="wf-time-field-wrapper">
-                    <select
-                      name="CONTACTCF116hour"
-                      class="wf-field-item wf-field-dropdown-date"
-                      data-wform-field="select"
-                    >
-                      <option value="01">01</option>
-                      <option value="02">02</option>
-                      <option value="03">03</option>
-                      <option value="04">04</option>
-                      <option value="05">05</option>
-                      <option value="06">06</option>
-                      <option value="07">07</option>
-                      <option value="08">08</option>
-                      <option value="09">09</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                    </select>
-                    <select
-                      name="CONTACTCF116minute"
-                      class="wf-field-item wf-field-dropdown-date"
-                      data-wform-field="select"
-                    >
-                      <option value="00">00</option>
-                      <option value="01">01</option>
-                      <option value="02">02</option>
-                      <option value="03">03</option>
-                      <option value="04">04</option>
-                      <option value="05">05</option>
-                      <option value="06">06</option>
-                      <option value="07">07</option>
-                      <option value="08">08</option>
-                      <option value="09">09</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                      <option value="13">13</option>
-                      <option value="14">14</option>
-                      <option value="15">15</option>
-                      <option value="16">16</option>
-                      <option value="17">17</option>
-                      <option value="18">18</option>
-                      <option value="19">19</option>
-                      <option value="20">20</option>
-                      <option value="21">21</option>
-                      <option value="22">22</option>
-                      <option value="23">23</option>
-                      <option value="24">24</option>
-                      <option value="25">25</option>
-                      <option value="26">26</option>
-                      <option value="27">27</option>
-                      <option value="28">28</option>
-                      <option value="29">29</option>
-                      <option value="30">30</option>
-                      <option value="31">31</option>
-                      <option value="32">32</option>
-                      <option value="33">33</option>
-                      <option value="34">34</option>
-                      <option value="35">35</option>
-                      <option value="36">36</option>
-                      <option value="37">37</option>
-                      <option value="38">38</option>
-                      <option value="39">39</option>
-                      <option value="40">40</option>
-                      <option value="41">41</option>
-                      <option value="42">42</option>
-                      <option value="43">43</option>
-                      <option value="44">44</option>
-                      <option value="45">45</option>
-                      <option value="46">46</option>
-                      <option value="47">47</option>
-                      <option value="48">48</option>
-                      <option value="49">49</option>
-                      <option value="50">50</option>
-                      <option value="51">51</option>
-                      <option value="52">52</option>
-                      <option value="53">53</option>
-                      <option value="54">54</option>
-                      <option value="55">55</option>
-                      <option value="56">56</option>
-                      <option value="57">57</option>
-                      <option value="58">58</option>
-                      <option value="59">59</option>
-                    </select>
-                    <select
-                      name="CONTACTCF116ampm"
-                      class="wf-field-item wf-field-dropdown-date"
-                      data-wform-field="select"
-                    >
-                      <option value="AM">AM</option>
-                      <option value="PM">PM</option>
-                    </select>
-                  </div>
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">date time</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input fvalidate="true" ftype="datetime" type="date" name="CONTACTCF116" maxlength="120" value="" placeholder="MM/dd/yyyy" class="wf-field-item wf-field-input wf-field-item-date" onchange="removeError(this);">
+                        <div class="wf-time-field-wrapper"> 
+                        <select name="CONTACTCF116hour" class="wf-field-item wf-field-dropdown-date" data-wform-field="select">
+                             <option value="01">01</option>
+                             <option value="02">02</option>
+                             <option value="03">03</option>
+                             <option value="04">04</option>
+                             <option value="05">05</option>
+                             <option value="06">06</option>
+                             <option value="07">07</option>
+                             <option value="08">08</option>
+                             <option value="09">09</option>
+                             <option value="10">10</option>
+                             <option value="11">11</option>
+                             <option value="12">12</option>
+                        </select>
+                        <select name="CONTACTCF116minute" class="wf-field-item wf-field-dropdown-date" data-wform-field="select">
+                             <option value="00">00</option>
+                             <option value="01">01</option>
+                             <option value="02">02</option>
+                             <option value="03">03</option>
+                             <option value="04">04</option>
+                             <option value="05">05</option>
+                             <option value="06">06</option>
+                             <option value="07">07</option>
+                             <option value="08">08</option>
+                             <option value="09">09</option>
+                             <option value="10">10</option>
+                             <option value="11">11</option>
+                             <option value="12">12</option>
+                             <option value="13">13</option>
+                             <option value="14">14</option>
+                             <option value="15">15</option>
+                             <option value="16">16</option>
+                             <option value="17">17</option>
+                             <option value="18">18</option>
+                             <option value="19">19</option>
+                             <option value="20">20</option>
+                             <option value="21">21</option>
+                             <option value="22">22</option>
+                             <option value="23">23</option>
+                             <option value="24">24</option>
+                             <option value="25">25</option>
+                             <option value="26">26</option>
+                             <option value="27">27</option>
+                             <option value="28">28</option>
+                             <option value="29">29</option>
+                             <option value="30">30</option>
+                             <option value="31">31</option>
+                             <option value="32">32</option>
+                             <option value="33">33</option>
+                             <option value="34">34</option>
+                             <option value="35">35</option>
+                             <option value="36">36</option>
+                             <option value="37">37</option>
+                             <option value="38">38</option>
+                             <option value="39">39</option>
+                             <option value="40">40</option>
+                             <option value="41">41</option>
+                             <option value="42">42</option>
+                             <option value="43">43</option>
+                             <option value="44">44</option>
+                             <option value="45">45</option>
+                             <option value="46">46</option>
+                             <option value="47">47</option>
+                             <option value="48">48</option>
+                             <option value="49">49</option>
+                             <option value="50">50</option>
+                             <option value="51">51</option>
+                             <option value="52">52</option>
+                             <option value="53">53</option>
+                             <option value="54">54</option>
+                             <option value="55">55</option>
+                             <option value="56">56</option>
+                             <option value="57">57</option>
+                             <option value="58">58</option>
+                             <option value="59">59</option>
+                        </select>
+                        <select name="CONTACTCF116ampm" class="wf-field-item wf-field-dropdown-date" data-wform-field="select">
+                             <option value="AM">AM</option>
+                             <option value="PM">PM</option>
+                        </select>
+                        </div>
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">date time 24hrs</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    fvalidate="true"
-                    ftype="datetime"
-                    type="date"
-                    name="CONTACTCF117"
-                    maxlength="120"
-                    value=""
-                    placeholder="MM/dd/yyyy"
-                    class="wf-field-item wf-field-input wf-field-item-date"
-                    onchange="removeError(this);"
-                  />
-                  <div class="wf-time-field-wrapper">
-                    <select
-                      name="CONTACTCF117hour"
-                      class="wf-field-item wf-field-dropdown-date"
-                      data-wform-field="select"
-                    >
-                      <option value="01">01</option>
-                      <option value="02">02</option>
-                      <option value="03">03</option>
-                      <option value="04">04</option>
-                      <option value="05">05</option>
-                      <option value="06">06</option>
-                      <option value="07">07</option>
-                      <option value="08">08</option>
-                      <option value="09">09</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                    </select>
-                    <select
-                      name="CONTACTCF117minute"
-                      class="wf-field-item wf-field-dropdown-date"
-                      data-wform-field="select"
-                    >
-                      <option value="00">00</option>
-                      <option value="01">01</option>
-                      <option value="02">02</option>
-                      <option value="03">03</option>
-                      <option value="04">04</option>
-                      <option value="05">05</option>
-                      <option value="06">06</option>
-                      <option value="07">07</option>
-                      <option value="08">08</option>
-                      <option value="09">09</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                      <option value="13">13</option>
-                      <option value="14">14</option>
-                      <option value="15">15</option>
-                      <option value="16">16</option>
-                      <option value="17">17</option>
-                      <option value="18">18</option>
-                      <option value="19">19</option>
-                      <option value="20">20</option>
-                      <option value="21">21</option>
-                      <option value="22">22</option>
-                      <option value="23">23</option>
-                      <option value="24">24</option>
-                      <option value="25">25</option>
-                      <option value="26">26</option>
-                      <option value="27">27</option>
-                      <option value="28">28</option>
-                      <option value="29">29</option>
-                      <option value="30">30</option>
-                      <option value="31">31</option>
-                      <option value="32">32</option>
-                      <option value="33">33</option>
-                      <option value="34">34</option>
-                      <option value="35">35</option>
-                      <option value="36">36</option>
-                      <option value="37">37</option>
-                      <option value="38">38</option>
-                      <option value="39">39</option>
-                      <option value="40">40</option>
-                      <option value="41">41</option>
-                      <option value="42">42</option>
-                      <option value="43">43</option>
-                      <option value="44">44</option>
-                      <option value="45">45</option>
-                      <option value="46">46</option>
-                      <option value="47">47</option>
-                      <option value="48">48</option>
-                      <option value="49">49</option>
-                      <option value="50">50</option>
-                      <option value="51">51</option>
-                      <option value="52">52</option>
-                      <option value="53">53</option>
-                      <option value="54">54</option>
-                      <option value="55">55</option>
-                      <option value="56">56</option>
-                      <option value="57">57</option>
-                      <option value="58">58</option>
-                      <option value="59">59</option>
-                    </select>
-                    <select
-                      name="CONTACTCF117ampm"
-                      class="wf-field-item wf-field-dropdown-date"
-                      data-wform-field="select"
-                    >
-                      <option value="AM">AM</option>
-                      <option value="PM">PM</option>
-                    </select>
-                  </div>
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">date time 24hrs</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input fvalidate="true" ftype="datetime" type="date" name="CONTACTCF117" maxlength="120" value="" placeholder="MM/dd/yyyy" class="wf-field-item wf-field-input wf-field-item-date" onchange="removeError(this);">
+                        <div class="wf-time-field-wrapper"> 
+                        <select name="CONTACTCF117hour" class="wf-field-item wf-field-dropdown-date" data-wform-field="select">
+                             <option value="01">01</option>
+                             <option value="02">02</option>
+                             <option value="03">03</option>
+                             <option value="04">04</option>
+                             <option value="05">05</option>
+                             <option value="06">06</option>
+                             <option value="07">07</option>
+                             <option value="08">08</option>
+                             <option value="09">09</option>
+                             <option value="10">10</option>
+                             <option value="11">11</option>
+                             <option value="12">12</option>
+                        </select>
+                        <select name="CONTACTCF117minute" class="wf-field-item wf-field-dropdown-date" data-wform-field="select">
+                             <option value="00">00</option>
+                             <option value="01">01</option>
+                             <option value="02">02</option>
+                             <option value="03">03</option>
+                             <option value="04">04</option>
+                             <option value="05">05</option>
+                             <option value="06">06</option>
+                             <option value="07">07</option>
+                             <option value="08">08</option>
+                             <option value="09">09</option>
+                             <option value="10">10</option>
+                             <option value="11">11</option>
+                             <option value="12">12</option>
+                             <option value="13">13</option>
+                             <option value="14">14</option>
+                             <option value="15">15</option>
+                             <option value="16">16</option>
+                             <option value="17">17</option>
+                             <option value="18">18</option>
+                             <option value="19">19</option>
+                             <option value="20">20</option>
+                             <option value="21">21</option>
+                             <option value="22">22</option>
+                             <option value="23">23</option>
+                             <option value="24">24</option>
+                             <option value="25">25</option>
+                             <option value="26">26</option>
+                             <option value="27">27</option>
+                             <option value="28">28</option>
+                             <option value="29">29</option>
+                             <option value="30">30</option>
+                             <option value="31">31</option>
+                             <option value="32">32</option>
+                             <option value="33">33</option>
+                             <option value="34">34</option>
+                             <option value="35">35</option>
+                             <option value="36">36</option>
+                             <option value="37">37</option>
+                             <option value="38">38</option>
+                             <option value="39">39</option>
+                             <option value="40">40</option>
+                             <option value="41">41</option>
+                             <option value="42">42</option>
+                             <option value="43">43</option>
+                             <option value="44">44</option>
+                             <option value="45">45</option>
+                             <option value="46">46</option>
+                             <option value="47">47</option>
+                             <option value="48">48</option>
+                             <option value="49">49</option>
+                             <option value="50">50</option>
+                             <option value="51">51</option>
+                             <option value="52">52</option>
+                             <option value="53">53</option>
+                             <option value="54">54</option>
+                             <option value="55">55</option>
+                             <option value="56">56</option>
+                             <option value="57">57</option>
+                             <option value="58">58</option>
+                             <option value="59">59</option>
+                        </select>
+                        <select name="CONTACTCF117ampm" class="wf-field-item wf-field-dropdown-date" data-wform-field="select">
+                             <option value="AM">AM</option>
+                             <option value="PM">PM</option>
+                        </select>
+                        </div>
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">textarea - new</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <textarea
-                    name="CONTACTCF8"
-                    maxlength="2000"
-                    type="text"
-                    class="wf-field-item wf-field-input"
-                    style="resize: none"
-                    oninput="removeError(this)"
-                  ></textarea>
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">textarea - new</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <textarea name="CONTACTCF8" maxlength="2000" type="text" class="wf-field-item wf-field-input" style="resize: none;" oninput="removeError(this)"></textarea>
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">select - new</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <select
-                    name="CONTACTCF9"
-                    class="wf-field-item wf-field-dropdown"
-                    data-wform-field="select"
-                    onchange="removeError(this);"
-                  >
-                    <option value="-None-">-None-</option>
-                    <option value="one">one</option>
-                    <option value="two">two</option>
-                    <option value="three">three</option>
-                    <option value="four">four</option>
-                    <option value="five">five</option>
-                  </select>
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">select - new</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <select name="CONTACTCF9" class="wf-field-item wf-field-dropdown" data-wform-field="select" onchange="removeError(this);">
+                             <option value="-None-">-None-</option>
+                             <option value="one">one</option>
+                             <option value="two">two</option>
+                             <option value="three">three</option>
+                             <option value="four">four</option>
+                             <option value="five">five</option>
+                        </select>
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">Multi-select - new</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <select
-                    multiple=""
-                    name="CONTACTCF10"
-                    class="wf-field-item wf-field-dropdown"
-                    data-wform-field="select-multiple"
-                    onchange="removeError(this);"
-                  >
-                    <option value="ten">ten</option>
-                    <option value="twenty">twenty</option>
-                    <option value="thirty">thirty</option>
-                    <option value="fourty">fourty</option>
-                    <option value="fifty">fifty</option>
-                  </select>
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">Multi-select - new</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <select multiple="" name="CONTACTCF10" class="wf-field-item wf-field-dropdown" data-wform-field="select-multiple" onchange="removeError(this);">
+                             <option value="ten">ten</option>
+                             <option value="twenty">twenty</option>
+                             <option value="thirty">thirty</option>
+                             <option value="fourty">fourty</option>
+                             <option value="fifty">fifty</option>
+                        </select>
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">currnecy - new</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    name="CONTACTCF67"
-                    maxlength="16"
-                    type="text"
-                    value=""
-                    class="wf-field-item wf-field-input"
-                    oninput="removeError(this)"
-                  />
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">currnecy - new</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input name="CONTACTCF67" maxlength="16" type="text" value="" class="wf-field-item wf-field-input" oninput="removeError(this)">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">date - new</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    fvalidate="true"
-                    ftype="date"
-                    type="date"
-                    name="CONTACTCF82"
-                    maxlength="20"
-                    value=""
-                    placeholder="MM/dd/yyyy"
-                    class="wf-field-item wf-field-input wf-field-item-date"
-                    onchange="removeError(this);"
-                  />
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">date - new</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input fvalidate="true" ftype="date" type="date" name="CONTACTCF82" maxlength="20" value="" placeholder="MM/dd/yyyy" class="wf-field-item wf-field-input wf-field-item-date" onchange="removeError(this);">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">date time - new</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    fvalidate="true"
-                    ftype="datetime"
-                    type="date"
-                    name="CONTACTCF118"
-                    maxlength="120"
-                    value=""
-                    placeholder="MM/dd/yyyy"
-                    class="wf-field-item wf-field-input wf-field-item-date"
-                    onchange="removeError(this);"
-                  />
-                  <div class="wf-time-field-wrapper">
-                    <select
-                      name="CONTACTCF118hour"
-                      class="wf-field-item wf-field-dropdown-date"
-                      data-wform-field="select"
-                    >
-                      <option value="01">01</option>
-                      <option value="02">02</option>
-                      <option value="03">03</option>
-                      <option value="04">04</option>
-                      <option value="05">05</option>
-                      <option value="06">06</option>
-                      <option value="07">07</option>
-                      <option value="08">08</option>
-                      <option value="09">09</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                    </select>
-                    <select
-                      name="CONTACTCF118minute"
-                      class="wf-field-item wf-field-dropdown-date"
-                      data-wform-field="select"
-                    >
-                      <option value="00">00</option>
-                      <option value="01">01</option>
-                      <option value="02">02</option>
-                      <option value="03">03</option>
-                      <option value="04">04</option>
-                      <option value="05">05</option>
-                      <option value="06">06</option>
-                      <option value="07">07</option>
-                      <option value="08">08</option>
-                      <option value="09">09</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                      <option value="13">13</option>
-                      <option value="14">14</option>
-                      <option value="15">15</option>
-                      <option value="16">16</option>
-                      <option value="17">17</option>
-                      <option value="18">18</option>
-                      <option value="19">19</option>
-                      <option value="20">20</option>
-                      <option value="21">21</option>
-                      <option value="22">22</option>
-                      <option value="23">23</option>
-                      <option value="24">24</option>
-                      <option value="25">25</option>
-                      <option value="26">26</option>
-                      <option value="27">27</option>
-                      <option value="28">28</option>
-                      <option value="29">29</option>
-                      <option value="30">30</option>
-                      <option value="31">31</option>
-                      <option value="32">32</option>
-                      <option value="33">33</option>
-                      <option value="34">34</option>
-                      <option value="35">35</option>
-                      <option value="36">36</option>
-                      <option value="37">37</option>
-                      <option value="38">38</option>
-                      <option value="39">39</option>
-                      <option value="40">40</option>
-                      <option value="41">41</option>
-                      <option value="42">42</option>
-                      <option value="43">43</option>
-                      <option value="44">44</option>
-                      <option value="45">45</option>
-                      <option value="46">46</option>
-                      <option value="47">47</option>
-                      <option value="48">48</option>
-                      <option value="49">49</option>
-                      <option value="50">50</option>
-                      <option value="51">51</option>
-                      <option value="52">52</option>
-                      <option value="53">53</option>
-                      <option value="54">54</option>
-                      <option value="55">55</option>
-                      <option value="56">56</option>
-                      <option value="57">57</option>
-                      <option value="58">58</option>
-                      <option value="59">59</option>
-                    </select>
-                    <select
-                      name="CONTACTCF118ampm"
-                      class="wf-field-item wf-field-dropdown-date"
-                      data-wform-field="select"
-                    >
-                      <option value="AM">AM</option>
-                      <option value="PM">PM</option>
-                    </select>
-                  </div>
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">date time - new</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input fvalidate="true" ftype="datetime" type="date" name="CONTACTCF118" maxlength="120" value="" placeholder="MM/dd/yyyy" class="wf-field-item wf-field-input wf-field-item-date" onchange="removeError(this);">
+                        <div class="wf-time-field-wrapper"> 
+                        <select name="CONTACTCF118hour" class="wf-field-item wf-field-dropdown-date" data-wform-field="select">
+                             <option value="01">01</option>
+                             <option value="02">02</option>
+                             <option value="03">03</option>
+                             <option value="04">04</option>
+                             <option value="05">05</option>
+                             <option value="06">06</option>
+                             <option value="07">07</option>
+                             <option value="08">08</option>
+                             <option value="09">09</option>
+                             <option value="10">10</option>
+                             <option value="11">11</option>
+                             <option value="12">12</option>
+                        </select>
+                        <select name="CONTACTCF118minute" class="wf-field-item wf-field-dropdown-date" data-wform-field="select">
+                             <option value="00">00</option>
+                             <option value="01">01</option>
+                             <option value="02">02</option>
+                             <option value="03">03</option>
+                             <option value="04">04</option>
+                             <option value="05">05</option>
+                             <option value="06">06</option>
+                             <option value="07">07</option>
+                             <option value="08">08</option>
+                             <option value="09">09</option>
+                             <option value="10">10</option>
+                             <option value="11">11</option>
+                             <option value="12">12</option>
+                             <option value="13">13</option>
+                             <option value="14">14</option>
+                             <option value="15">15</option>
+                             <option value="16">16</option>
+                             <option value="17">17</option>
+                             <option value="18">18</option>
+                             <option value="19">19</option>
+                             <option value="20">20</option>
+                             <option value="21">21</option>
+                             <option value="22">22</option>
+                             <option value="23">23</option>
+                             <option value="24">24</option>
+                             <option value="25">25</option>
+                             <option value="26">26</option>
+                             <option value="27">27</option>
+                             <option value="28">28</option>
+                             <option value="29">29</option>
+                             <option value="30">30</option>
+                             <option value="31">31</option>
+                             <option value="32">32</option>
+                             <option value="33">33</option>
+                             <option value="34">34</option>
+                             <option value="35">35</option>
+                             <option value="36">36</option>
+                             <option value="37">37</option>
+                             <option value="38">38</option>
+                             <option value="39">39</option>
+                             <option value="40">40</option>
+                             <option value="41">41</option>
+                             <option value="42">42</option>
+                             <option value="43">43</option>
+                             <option value="44">44</option>
+                             <option value="45">45</option>
+                             <option value="46">46</option>
+                             <option value="47">47</option>
+                             <option value="48">48</option>
+                             <option value="49">49</option>
+                             <option value="50">50</option>
+                             <option value="51">51</option>
+                             <option value="52">52</option>
+                             <option value="53">53</option>
+                             <option value="54">54</option>
+                             <option value="55">55</option>
+                             <option value="56">56</option>
+                             <option value="57">57</option>
+                             <option value="58">58</option>
+                             <option value="59">59</option>
+                        </select>
+                        <select name="CONTACTCF118ampm" class="wf-field-item wf-field-dropdown-date" data-wform-field="select">
+                             <option value="AM">AM</option>
+                             <option value="PM">PM</option>
+                        </select>
+                        </div>
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">email - new</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    fvalidate="true"
-                    ftype="email"
-                    name="CONTACTCF3"
-                    maxlength="100"
-                    type="text"
-                    value=""
-                    class="wf-field-item wf-field-input"
-                    oninput="removeError(this)"
-                  />
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">email - new</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input fvalidate="true" ftype="email" name="CONTACTCF3" maxlength="100" type="text" value="" class="wf-field-item wf-field-input" oninput="removeError(this)">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">phone - new</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    fvalidate="true"
-                    ftype="mobile"
-                    name="CONTACTCF11"
-                    maxlength="20"
-                    type="text"
-                    value=""
-                    class="wf-field-item wf-field-input"
-                    oninput="removeError(this)"
-                  />
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">phone - new</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input fvalidate="true" ftype="mobile" name="CONTACTCF11" maxlength="20" type="text" value="" class="wf-field-item wf-field-input" oninput="removeError(this)">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">url - new</div>
-              <div class="wf-field wf-field-mandatory">
-                <div class="wf-field-inner">
-                  <input
-                    fvalidate="true"
-                    ftype="url"
-                    name="CONTACTCF12"
-                    maxlength="255"
-                    type="text"
-                    value=""
-                    class="wf-field-item wf-field-input"
-                    oninput="removeError(this)"
-                  />
-                </div>
+              <div class="wf-row">  
+                   <div class="wf-label">url - new</div>
+                   <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <input fvalidate="true" ftype="url" name="CONTACTCF12" maxlength="255" type="text" value="" class="wf-field-item wf-field-input" oninput="removeError(this)">
+                        </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row">
-              <div class="wf-label">multi pick</div>
-              <div class="wf-field">
-                <div class="wf-field wf-field-mandatory">
-                  <div class="wf-field-inner">
-                    <!-- <select multiple="" name="CONTACTCF2" class="wf-field-item wf-field-dropdown" data-wform-field="select-multiple" onchange="removeError(this);">
+              <div class="wf-row">  
+                   <div class="wf-label">multi pick</div>
+                   <div class="wf-field">
+                    <div class="wf-field wf-field-mandatory">
+                        <div class="wf-field-inner">
+                        <!-- <select multiple="" name="CONTACTCF2" class="wf-field-item wf-field-dropdown" data-wform-field="select-multiple" onchange="removeError(this);">
                              <option value="fasdf">fasdf</option>
                              <option value="dfgfasfd">dfgfasfd</option>
                              <option value="asdfgsdfas">asdfgsdfas</option>
@@ -1347,487 +1042,374 @@
                              <option value="ghfgrr">ghfgrr</option>
                              <option value="asdgassdf">asdgassdf</option>
                         </select> -->
-                    <div
-                      class="multiselect wf-field-dropdown"
-                      onclick="showTheDropDown()"
-                    >
-                      <div
-                        class="selected-options wf-field-item selected-options-field dN"
-                      ></div>
-                      <div class="dropdown">
-                        <input
-                          type="text"
-                          class="dropdown-input input-not-active"
-                        />
-                        <ul class="dropdown-menu"></ul>
-                      </div>
+                            <div class="multiselect wf-field-dropdown" onclick="showTheDropDown()">
+                                <div class="selected-options wf-field-item selected-options-field dN"></div>
+                                <div class="dropdown">
+                                <input type="text" class="dropdown-input input-not-active"/>
+                                <ul class="dropdown-menu">
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
+                   </div>
               </div>
-            </div>
-            <div class="wf-row wf-btn-row">
-              <div class="wf-label" data-ux-empty-label="true"></div>
-              <div class="wform-btn-wrap">
-                <input
-                  id="formsubmit"
-                  type="submit"
-                  class="wf-btn"
-                  style="
-                    background-color: #1980d8;
-                    color: #fff;
-                    border: 1px solid #1980d8;
-                    width: auto;
-                  "
-                  value="Submit"
-                />
-              </div>
-            </div>
-          </div>
+              <div class="wf-row wf-btn-row">
+                   <div class="wf-label" data-ux-empty-label="true"></div>
+                   <div class="wform-btn-wrap">
+                   <input id="formsubmit" type="submit" class="wf-btn" style="background-color:#1980d8; color: #fff; border: 1px solid #1980d8;width: auto;" value="Submit">
+              </div></div>
+        </div>
         </form>
-      </div>
+        </div>
     </div>
     <script>
-      var mndFileds = new Array(
-        "First\x20Name",
-        "Last\x20Name",
-        "Email",
-        "Mobile",
-        "Phone",
-        "Home\x20Phone",
-        "Description",
-        "Mailing\x20Street",
-        "CONTACTCF1",
-        "CONTACTCF81",
-        "CONTACTCF51",
-        "CONTACTCF66",
-        "CONTACTCF4",
-        "CONTACTCF5",
-        "CONTACTCF116",
-        "CONTACTCF117",
-        "CONTACTCF8",
-        "CONTACTCF9",
-        "CONTACTCF10",
-        "CONTACTCF67",
-        "CONTACTCF82",
-        "CONTACTCF118",
-        "CONTACTCF3",
-        "CONTACTCF11",
-        "CONTACTCF12"
-      );
-      var fldLangVal = new Array(
-        "First\x20Name",
-        "Last\x20Name",
-        "Email",
-        "Mobile",
-        "Phone",
-        "Home\x20Phone",
-        "Description",
-        "Mailing\x20Street",
-        "pick",
-        "datee",
-        "numb",
-        "currencysd",
-        "mail",
-        "phonee",
-        "date\x20time",
-        "date\x20time\x2024hrs",
-        "textarea\x20\x2D\x20new",
-        "select\x20\x2D\x20new",
-        "Multi\x2Dselect\x20\x2D\x20new",
-        "currnecy\x20\x2D\x20new",
-        "date\x20\x2D\x20new",
-        "date\x20time\x20\x2D\x20new",
-        "email\x20\x2D\x20new",
-        "phone\x20\x2D\x20new",
-        "url\x20\x2D\x20new"
-      );
-      var wfInnerWidth = window.innerWidth;
-      if (wfInnerWidth <= 768) {
-        document.forms["BiginWebToRecordForm1669156000000981002"].setAttribute(
-          "data-ux-form-alignment",
-          "top"
-        );
-      }
-      var name = "";
-      var email = "";
-      function removeError(fieldObj) {
-        var parentElement = fieldObj.parentElement.parentElement,
-          childEle = parentElement.getElementsByClassName("wf-field-error")[0];
-        if (childEle) {
-          parentElement.classList.remove("wf-field-error-active");
-          parentElement.removeChild(
-            parentElement.getElementsByClassName("wf-field-error")[0]
-          );
-        }
-      }
-      function setError(fieldObj, label) {
-        var parentElement = fieldObj.parentElement.parentElement,
-          childEle = parentElement.getElementsByClassName("wf-field-error")[0];
-        if (!childEle) {
-          var spanEle = document.createElement("SPAN");
-          spanEle.setAttribute("class", "wf-field-error");
-          spanEle.innerHTML = label;
-          parentElement.append(spanEle);
-          parentElement.classList.add("wf-field-error-active");
-        }
-      }
-      function validateFields1669156000000981002() {
-        var isReturn = true;
-        var form = document.forms["BiginWebToRecordForm1669156000000981002"];
-        var validateFld = form.querySelectorAll("[fvalidate=true]");
-        var i;
-        for (i = 0; i < validateFld.length; i++) {
-          var validateFldVal = validateFld[i].value;
-          if (validateFldVal !== "") {
-            var fLabel =
-              validateFld[
-                i
-              ].parentElement.parentElement.parentElement.getElementsByClassName(
-                "wf-label"
-              )[0].innerHTML;
-            switch (validateFld[i].getAttribute("ftype")) {
-              case "email":
-                if (
-                  validateFldVal.match(
-                    /^([A-Za-z0-9._%-'+/]+@[A-Za-z0-9.-]+.[a-zA-Z]{2,22})$/
-                  ) === null
-                ) {
-                  setError(validateFld[i], "Enter valid " + fLabel);
-                  isReturn = false;
-                }
-                break;
-              case "number":
-                if (validateFldVal.match(/^[0-9]+$/) === null) {
-                  setError(validateFld[i], "Enter valid " + fLabel);
-                  isReturn = false;
-                }
-                break;
-              case "double":
-                if (validateFldVal.match(/^[0-9]*(\.[0-9]{0,2})?$/) === null) {
-                  setError(validateFld[i], "Enter valid " + fLabel);
-                  isReturn = false;
-                }
-                break;
-              case "mobile":
-                if (validateFldVal.match(/^[0-9a-zA-Z+.()\-;\s]+$/) === null) {
-                  setError(validateFld[i], "Enter valid " + fLabel);
-                  isReturn = false;
-                }
-                break;
-            }
+           var mndFileds=new Array('First\x20Name','Last\x20Name','Email','Mobile','Phone','Home\x20Phone','Description','Mailing\x20Street','CONTACTCF1','CONTACTCF81','CONTACTCF51','CONTACTCF66','CONTACTCF4','CONTACTCF5','CONTACTCF116','CONTACTCF117','CONTACTCF8','CONTACTCF9','CONTACTCF10','CONTACTCF67','CONTACTCF82','CONTACTCF118','CONTACTCF3','CONTACTCF11','CONTACTCF12');
+           var fldLangVal=new Array('First\x20Name','Last\x20Name','Email','Mobile','Phone','Home\x20Phone','Description','Mailing\x20Street','pick','datee','numb','currencysd','mail','phonee','date\x20time','date\x20time\x2024hrs','textarea\x20\x2D\x20new','select\x20\x2D\x20new','Multi\x2Dselect\x20\x2D\x20new','currnecy\x20\x2D\x20new','date\x20\x2D\x20new','date\x20time\x20\x2D\x20new','email\x20\x2D\x20new','phone\x20\x2D\x20new','url\x20\x2D\x20new');
+          var wfInnerWidth = window.innerWidth;
+          if(wfInnerWidth <= 768){
+               document.forms['BiginWebToRecordForm1669156000000981002'].setAttribute('data-ux-form-alignment', 'top');
           }
-        }
-        return isReturn;
-      }
-
-      function checkMandatory1669156000000981002() {
-        var isReturn = true;
-        for (i = 0; i < mndFileds.length; i++) {
-          var fieldObj =
-            document.forms["BiginWebToRecordForm1669156000000981002"][
-              mndFileds[i]
-            ];
-          if (fieldObj) {
-            if (fieldObj.value.replace(/^\s+|\s+$/g, "").length == 0) {
-              if (fieldObj.type == "file") {
-                setError(fieldObj, "Please select a file to upload.");
-                isReturn = false;
+            var name='';
+            var email='';
+         function removeError(fieldObj) {
+              var parentElement = fieldObj.parentElement.parentElement,
+                   childEle = parentElement.getElementsByClassName('wf-field-error')[0];
+              if(childEle) {
+                   parentElement.classList.remove('wf-field-error-active');
+                   parentElement.removeChild(parentElement.getElementsByClassName('wf-field-error')[0]);
               }
-              setError(fieldObj, fldLangVal[i] + " cannot be empty");
-              isReturn = false;
-            } else if (fieldObj.nodeName == "SELECT") {
-              if (fieldObj.options[fieldObj.selectedIndex].value == "-None-") {
-                setError(fieldObj, fldLangVal[i] + " cannot be none.");
-                isReturn = false;
+         }
+         function setError(fieldObj, label) {
+              var parentElement = fieldObj.parentElement.parentElement,
+                  childEle = parentElement.getElementsByClassName('wf-field-error')[0];
+              if(!childEle) {
+                   var spanEle = document.createElement('SPAN');
+                   spanEle.setAttribute('class', 'wf-field-error');
+                   spanEle.innerHTML = label;
+                   parentElement.append(spanEle);
+                   parentElement.classList.add('wf-field-error-active');
               }
-            } else if (fieldObj.type == "checkbox") {
-              if (fieldObj.checked == false) {
-                setError(fieldObj, "Please accept  " + fldLangVal[i]);
-                isReturn = false;
+         }
+         function validateFields1669156000000981002() {
+              var isReturn = true;
+              var form = document.forms['BiginWebToRecordForm1669156000000981002'];
+              var validateFld = form.querySelectorAll('[fvalidate=true]');
+              var i;
+              for (i = 0; i < validateFld.length; i++)
+              {
+                   var validateFldVal = validateFld[i].value;
+                   if(validateFldVal !== '') {
+                        var fLabel = validateFld[i].parentElement.parentElement.parentElement.getElementsByClassName('wf-label')[0].innerHTML;
+                        switch(validateFld[i].getAttribute('ftype')) {
+                        case 'email':
+                             if(validateFldVal.match(/^([A-Za-z0-9._%-'+/]+@[A-Za-z0-9.-]+.[a-zA-Z]{2,22})$/) === null) {
+                                  setError(validateFld[i], 'Enter valid ' + fLabel);
+                                  isReturn = false;
+                             }
+                             break;
+                        case 'number':
+                             if(validateFldVal.match(/^[0-9]+$/) === null) {
+                                  setError(validateFld[i], 'Enter valid ' + fLabel);
+                                  isReturn = false;
+                              }
+                             break;
+                        case 'double':
+                             if(validateFldVal.match(/^[0-9]*(\.[0-9]{0,2})?$/) === null) {
+                                  setError(validateFld[i], 'Enter valid ' + fLabel);
+                                  isReturn = false;
+                              }
+                             break;
+                        case 'mobile':
+                              if(validateFldVal.match(/^[0-9a-zA-Z+.()\-;\s]+$/) === null) {
+                                  setError(validateFld[i], 'Enter valid ' + fLabel);
+                                  isReturn = false;
+                              }
+                             break;
+                         }
+                   }
               }
+              return isReturn;
+         }
+    
+            function checkMandatory1669156000000981002() {
+            var isReturn = true;
+            for(i=0;i<mndFileds.length;i++) {
+              var fieldObj=document.forms['BiginWebToRecordForm1669156000000981002'][mndFileds[i]];
+              if(fieldObj) {
+                if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
+                    if(fieldObj.type =='file')
+                    {
+                         setError(fieldObj, 'Please select a file to upload.'); 
+                        isReturn = false;
+                    }
+                    setError(fieldObj, fldLangVal[i] + ' cannot be empty');
+                    isReturn= false;
+                }  else if(fieldObj.nodeName=='SELECT') {
+                    if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
+                    setError(fieldObj, fldLangVal[i] +' cannot be none.');
+                    isReturn = false;
+                   }
+                } else if(fieldObj.type =='checkbox'){
+                    if(fieldObj.checked == false){
+                    setError(fieldObj, 'Please accept  '+fldLangVal[i]);
+                    isReturn= false;
+                    } 
+                 } 
+                 try {
+                     if(fieldObj.name == 'Last Name') {
+                    name = fieldObj.value;
+                       }
+                } catch (e) {}
+                }
             }
-            try {
-              if (fieldObj.name == "Last Name") {
-                name = fieldObj.value;
-              }
-            } catch (e) {}
-          }
-        }
-        if (!validateFields1669156000000981002()) {
-          isReturn = false;
-        }
-        if (!isReturn) {
-          var errEle = document.getElementsByClassName("wf-field-error");
-          if (errEle && errEle.length > 0) {
-            var inputEle =
-              errEle[0].parentElement.getElementsByTagName("input");
-            if (inputEle && inputEle.length == 0) {
-              inputEle = errEle[0].parentElement.getElementsByTagName("select");
+            if(!validateFields1669156000000981002()){isReturn = false;}
+            if(!isReturn){
+                var errEle = document.getElementsByClassName('wf-field-error');
+                if(errEle && errEle.length >0){
+                    var inputEle = errEle[0].parentElement.getElementsByTagName('input');
+                    if(inputEle && inputEle.length == 0) {
+                        inputEle = errEle[0].parentElement.getElementsByTagName('select');
+                    }
+                    if(inputEle && inputEle.length > 0) {
+                        inputEle[0].focus();
+                    }
+                }
             }
-            if (inputEle && inputEle.length > 0) {
-              inputEle[0].focus();
+            return isReturn; 
             }
-          }
-        }
-        return isReturn;
-      }
+    
+           
     </script>
-    <script
-      id="wf_script"
-      src="./WebFormServeServlet_files/WebformScriptServlet"
-    ></script>
-    <script>
-      var formname = document.BiginWebToRecordForm;
-      if (!formname) {
-        formname = document.BiginWebToRecordForm1669156000000981002;
+          <script id="wf_script" src="./WebFormServeServlet_files/WebformScriptServlet"></script><script>var formname = document.BiginWebToRecordForm; if(!formname){ formname = document.BiginWebToRecordForm1669156000000981002 } if(!formname){ formname = document.BiginWebToContactForm1669156000000981002 } if(!formname){ formname = document.WebToContacts1669156000000981002 } formname.action = 'https://biginqa.localzoho.com/crm/WebForm';formname.className = formname.className + ' wf-form-paid';function validateForm() {  return validateForm1669156000000981002();  }function validateForm1669156000000981002() {  if((typeof checkMandatory !== 'undefined' && checkMandatory()) || (typeof checkMandatory1669156000000981002 !== 'undefined' && checkMandatory1669156000000981002())) {var formname = document.BiginWebToRecordForm; if(!formname){ formname = document.BiginWebToRecordForm1669156000000981002 }  formname.submit();  }else{  event.preventDefault();  return false;  }  }
+        // Get the dropdown elements
+var dropdown = document.getElementsByClassName('dropdown')[0],
+    dropdownInput = document.getElementsByClassName('dropdown-input')[0],
+    multiselectBox = document.getElementsByClassName('multiselect')[0],
+    dropdownMenu = document.querySelector('.dropdown-menu'),
+ // Get the selected options container
+    selectedOptions = document.getElementsByClassName('selected-options')[0],
+// Options data
+    optionsData = ['Arun', 'Muthukumar', 'Kishore', 'Velkumar', 'Bala', 'Zoom', 'Leonardo', 'Paul', 'Avul Pakir Jainulabdeen Abdul Kalam', 'Ragnor', 'Wolverine', 'Goku', 'Rocky'];
+
+// Showing Dropdown
+function showTheDropDown(){
+    if(dropdownMenu.childElementCount === 0){
+      multiselectBox.classList.remove('dropbox-active');
+      selectedOptions.classList.add('drp-dwn-no-val');
+      return false;
+    }
+    dropdown.classList.add('open');
+    selectedOptions.classList.remove('drop-box-closed', 'drp-dwn-no-val', 'selected-options-field');
+    multiselectBox.classList.add('dropbox-active');
+    dropdownMenu.classList.add('dropdown-focus');
+    dropdownInput.classList.remove('input-not-active', 'drop-box-closed');
+    dropdownInput.setAttribute('placeholder', 'Search Here');
+    dropdownInput.focus();
+} 
+
+// Create options dynamically
+function createDropdownOptions() {
+  // Clear the dropdown menu
+  dropdownMenu.innerHTML = '';
+
+  optionsData.forEach(function(optionValue) {
+    if (!selectedOptionsData.includes(optionValue)) {
+      var optionContainer = document.createElement('div');
+      optionContainer.classList.add('option');
+
+      var optionTag = document.createElement('span');
+      optionTag.textContent = optionValue;
+      optionTag.dataset.value = optionValue;
+      optionTag.classList.add('option-txt');
+      optionContainer.appendChild(optionTag);
+      dropdownMenu.appendChild(optionContainer);
+    }
+  });
+
+  // Add event listener to the options in the dropdown
+  var options = dropdownMenu.querySelectorAll('.option');
+  options.forEach(function(option) {
+    option.addEventListener('click', function() {
+      var optionValue = this.querySelector('span').dataset.value;
+      addSelectedOption(optionValue);
+      if(selectedOptions.childElementCount > 0){
+        selectedOptions.classList.remove('dN');
+        dropdownInput.classList.add('drop-box-active');
       }
-      if (!formname) {
-        formname = document.BiginWebToContactForm1669156000000981002;
+      // Checking drop-down value is empty or not to remove search
+      if(dropdownMenu.childElementCount === 0){
+        dropdown.classList.add('dN');
       }
-      if (!formname) {
-        formname = document.WebToContacts1669156000000981002;
+      // Remove the option from the dropdown
+    //   dropdownMenu.removeChild(this);
+    });
+  });
+}
+
+// Store the selected options
+var selectedOptionsData = [];
+
+// Function to add selected option
+function addSelectedOption(optionValue) {
+  if (!selectedOptionsData.includes(optionValue)) {
+    selectedOptionsData.push(optionValue);
+
+    // Add selected option to the container
+    var optionContainer = document.createElement('div');
+    optionContainer.classList.add('selected-option', 'multi-tag');
+
+    var optionTag = document.createElement('span');
+    optionTag.classList.add('tag-data-val', 'ellipsis');
+    optionTag.textContent = optionValue;
+    optionTag.dataset.value = optionValue;
+    optionContainer.appendChild(optionTag);
+
+    var removeButton = document.createElement('span');
+    removeButton.textContent = 'x';
+    removeButton.classList.add('remove-button', 'tag-close-btn');
+    removeButton.addEventListener('click', function() {
+      var optionContainer = this.parentNode,
+        optionValue = optionContainer.querySelector('span').dataset.value;
+      // Remove the selected option from the container
+      selectedOptions.removeChild(optionContainer);
+      // Remove the option from the selected options
+      var index = selectedOptionsData.indexOf(optionValue);
+      if (index > -1) {
+        selectedOptionsData.splice(index, 1);
       }
-      formname.action = "https://biginqa.localzoho.com/crm/WebForm";
-      formname.className = formname.className + " wf-form-paid";
-      function validateForm() {
-        return validateForm1669156000000981002();
+      // Checking selected Options div whether Children is appended or not
+      if(selectedOptions.childElementCount === 0){
+        selectedOptions.classList.add('dN');
+        dropdownInput.classList.remove('drop-box-active');
       }
-      function validateForm1669156000000981002() {
-        if (
-          (typeof checkMandatory !== "undefined" && checkMandatory()) ||
-          (typeof checkMandatory1669156000000981002 !== "undefined" &&
-            checkMandatory1669156000000981002())
-        ) {
-          var formname = document.BiginWebToRecordForm;
-          if (!formname) {
-            formname = document.BiginWebToRecordForm1669156000000981002;
-          }
-          formname.submit();
-        } else {
-          event.preventDefault();
-          return false;
+      // Checking drop-down value is empty or not to add search
+        if(dropdown.classList.contains('dN')){
+          dropdown.classList.remove('dN');
         }
-      }
-    </script>
-    <script>
-      // Get the dropdown elements
-      var dropdown = document.getElementsByClassName("dropdown")[0],
-        dropdownInput = document.getElementsByClassName("dropdown-input")[0],
-        multiselectBox = document.getElementsByClassName("multiselect")[0],
-        dropdownMenu = document.querySelector(".dropdown-menu"),
-        // Get the selected options container
-        selectedOptions =
-          document.getElementsByClassName("selected-options")[0],
-        // Options data
-        optionsData = [
-          "Arun",
-          "Muthukumar",
-          "Kishore",
-          "Velkumar",
-          "Bala",
-          "Zoom",
-          "Leonardo",
-          "Paul",
-          "Avul Pakir Jainulabdeen Abdul Kalam asdfadsfsaf aadsfsadfdasfsaf asdfsdfdasfsdfsa",
-          "asjdfhsaifhidoashdfoguigsadoufgsaouifuaisgdfouigasoisuoidfgoiuasuodfigasoudfgoduisagfuoidasguofigasduoifguaisdfasdfadsfsafasdfa",
-          "Ragnor",
-          "Wolverine",
-          "Goku",
-          "Rocky"
-        ];
-
-      // Showing Dropdown
-      function showTheDropDown() {
-        if (dropdownMenu.childElementCount === 0) {
-          multiselectBox.classList.remove("dropbox-active");
-          selectedOptions.classList.add("drp-dwn-no-val");
-          return false;
-        }
-        dropdown.classList.add("open");
-        selectedOptions.classList.remove(
-          "drop-box-closed",
-          "drp-dwn-no-val",
-          "selected-options-field"
-        );
-        multiselectBox.classList.add("dropbox-active");
-        dropdownMenu.classList.add("dropdown-focus");
-        dropdownInput.classList.remove("input-not-active", "drop-box-closed");
-        dropdownInput.setAttribute("placeholder", "Search Here");
-        dropdownInput.focus();
-      }
-
-      // Create options dynamically
-      function createDropdownOptions() {
-        // Clear the dropdown menu
-        dropdownMenu.innerHTML = "";
-
-        optionsData.forEach(function (optionValue) {
-          if (!selectedOptionsData.includes(optionValue)) {
-            var optionContainer = document.createElement("div");
-            optionContainer.classList.add("option");
-
-            var optionTag = document.createElement("span");
-            optionTag.textContent = optionValue;
-            optionTag.dataset.value = optionValue;
-            optionTag.classList.add("option-txt");
-            optionContainer.appendChild(optionTag);
-            dropdownMenu.appendChild(optionContainer);
-          }
-        });
-
-        // Add event listener to the options in the dropdown
-        var options = dropdownMenu.querySelectorAll(".option");
-        options.forEach(function (option) {
-          option.addEventListener("click", function () {
-            var optionValue = this.querySelector("span").dataset.value;
-            addSelectedOption(optionValue);
-            if (selectedOptions.childElementCount > 0) {
-              selectedOptions.classList.remove("dN");
-              dropdownInput.classList.add("drop-box-active");
-            }
-            // Checking drop-down value is empty or not to remove search
-            if (dropdownMenu.childElementCount === 0) {
-              dropdown.classList.add("dN");
-            }
-            // Remove the option from the dropdown
-            //   dropdownMenu.removeChild(this);
-          });
-        });
-      }
-
-      // Store the selected options
-      var selectedOptionsData = [];
-
-      // Function to add selected option
-      function addSelectedOption(optionValue) {
-        if (!selectedOptionsData.includes(optionValue)) {
-          selectedOptionsData.push(optionValue);
-
-          // Add selected option to the container
-          var optionContainer = document.createElement("div");
-          optionContainer.classList.add("selected-option", "multi-tag");
-
-          var optionTag = document.createElement("span");
-          optionTag.classList.add("tag-data-val", "ellipsis");
-          optionTag.textContent = optionValue;
-          optionTag.dataset.value = optionValue;
-          optionContainer.appendChild(optionTag);
-
-          var removeButton = document.createElement("span");
-          removeButton.textContent = "x";
-          removeButton.classList.add("remove-button", "tag-close-btn");
-          removeButton.addEventListener("click", function () {
-            var optionContainer = this.parentNode,
-              optionValue = optionContainer.querySelector("span").dataset.value;
-            // Remove the selected option from the container
-            selectedOptions.removeChild(optionContainer);
-            // Remove the option from the selected options
-            var index = selectedOptionsData.indexOf(optionValue);
-            if (index > -1) {
-              selectedOptionsData.splice(index, 1);
-            }
-            // Checking selected Options div whether Children is appended or not
-            if (selectedOptions.childElementCount === 0) {
-              selectedOptions.classList.add("dN");
-              dropdownInput.classList.remove("drop-box-active");
-            }
-            // Checking drop-down value is empty or not to add search
-            if (dropdown.classList.contains("dN")) {
-              dropdown.classList.remove("dN");
-            }
-            console.log(dropdownMenu.childElementCount);
-            // Clear the dropdown menu and re-create the options
-            createDropdownOptions();
-          });
-
-          optionContainer.appendChild(removeButton);
-          selectedOptions.appendChild(optionContainer);
-        }
-        dropdownInput.value = ""; // Clear the input field
-        dropdownInput.focus(); // Set focus back to the input field
-
-        // Clear the dropdown menu and re-create the options
-        createDropdownOptions();
-      }
-
-      // Add event listener to the dropdown input
-      dropdownInput.addEventListener("input", function () {
-        var searchText = dropdownInput.value.toLowerCase(),
-          noResults = document.getElementsByClassName("no-results")[0],
-          div = document.createElement("div"),
-          span = document.createElement("span"),
-          options = dropdownMenu.querySelectorAll(".option");
-
-        span.setAttribute("data-value", "No results");
-        div.setAttribute("class", "option no-results");
-        div.textContent = "No options found";
-        options.forEach(function (option) {
-          let optionValue = option
-            .querySelector("span")
-            .dataset.value.toLowerCase();
-          if (optionValue.includes(searchText)) {
-            option.classList.add("opt-show");
-            option.classList.remove("opt-hide");
-          } else {
-            option.classList.remove("opt-show");
-            option.classList.add("opt-hide");
-          }
-        });
-        // Adding No results found when no option is to find
-        for (i = 0; i < options.length; i++) {
-          if (options[i].classList.contains("opt-hide")) {
-            if (i == options.length - 1) {
-              div.appendChild(span);
-              if (options[i].classList.contains("no-results")) {
-                if (noResults.classList.contains("opt-hide")) {
-                  noResults.classList.remove("opt-hide");
-                }
-                return false;
-              } else {
-                dropdownMenu.appendChild(div);
-              }
-            }
-          } else {
-            if (noResults) {
-              noResults.remove();
-            }
-            return false;
-          }
-        }
-      });
-      // Closing dropdown & removind focus border on outside clicks
-      window.addEventListener("click", function (e) {
-        let targetClasses = e.target.classList,
-          classNames = [
-            "multiselect",
-            "selected-options",
-            "dropdown-input",
-            "option",
-            "option-txt",
-            "selected-option",
-            "remove-button",
-            "dropdown",
-          ];
-        if (classNames.some((className) => targetClasses.contains(className))) {
-          return true;
-        } else {
-          dropdown.classList.remove("open");
-          multiselectBox.classList.remove("dropbox-active");
-          dropdownMenu.classList.remove("dropdown-focus");
-          selectedOptions.classList.add("drop-box-closed");
-          dropdownInput.classList.add("drop-box-closed");
-        }
-        if (selectedOptions.childNodes.length < 1) {
-          selectedOptions.classList.add("selected-options-field");
-          dropdownInput.removeAttribute("placeholder");
-        } else {
-          selectedOptions.classList.remove("selected-options-field");
-        }
-      });
-
-      // Initialize the dropdown options
+      // Clear the dropdown menu and re-create the options
       createDropdownOptions();
-    </script>
-  </body>
-</html>
+    });
+
+    optionContainer.appendChild(removeButton);
+    selectedOptions.appendChild(optionContainer);
+  }
+  dropdownInput.value = ''; // Clear the input field
+  dropdownInput.focus(); // Set focus back to the input field
+
+  // Clear the dropdown menu and re-create the options
+  createDropdownOptions();
+}
+
+// Add event listener to the dropdown input
+dropdownInput.addEventListener('input', function() {
+  var searchText = dropdownInput.value.toLowerCase(),
+      noResults = document.getElementsByClassName('no-results')[0],
+      div = document.createElement('div'),
+      span = document.createElement('span'),
+      options = dropdownMenu.querySelectorAll('.option');
+
+      span.setAttribute('data-value', 'No results');
+      div.setAttribute('class', 'option no-results');
+      div.textContent = 'No options found';
+  options.forEach(function(option) {
+    let optionValue = option.querySelector('span').dataset.value.toLowerCase();
+    if (optionValue.includes(searchText)) {
+      option.classList.add('opt-show');
+      option.classList.remove('opt-hide');
+    } else {
+      option.classList.remove('opt-show');
+      option.classList.add('opt-hide');
+    }
+  });
+  // Adding No results found when no option is to find
+  for(i = 0; i < options.length; i++){
+    if(options[i].classList.contains('opt-hide')){
+      if(i == options.length - 1){
+        div.appendChild(span); 
+        if(options[i].classList.contains('no-results')){
+          if(noResults.classList.contains('opt-hide')){
+            noResults.classList.remove('opt-hide');
+          }
+          return false;
+        }else{
+          dropdownMenu.appendChild(div);
+        }
+      }
+    }else{
+      if(noResults) {
+        noResults.remove();
+      }
+      return false
+    }
+  }
+});
+// Closing dropdown & removind focus border on outside clicks
+document.addEventListener('click', function(e){
+  let targetClasses = e.target.classList,
+          options = dropdownMenu.querySelectorAll('.option'),
+          noResults = document.getElementsByClassName('no-results')[0],
+          classNames = ['multiselect', 'selected-options', 'dropdown-input', 'option', 'option-txt', 'selected-option', 'remove-button', 'dropdown'];
+      if(classNames.some(className => targetClasses.contains(className))){
+          return true;
+      }else{
+              dropdown.classList.remove('open');
+              multiselectBox.classList.remove('dropbox-active');
+              dropdownMenu.classList.remove('dropdown-focus');
+              selectedOptions.classList.add('drop-box-closed');
+              dropdownInput.classList.add('drop-box-closed');
+              if(dropdownInput.value){
+                dropdownInput.value = '';
+                options.forEach(function(option){
+                  if(option.classList.contains('opt-hide')){
+                    option.classList.remove('opt-hide')
+                  }
+                });
+                noResults.remove();
+              }
+          }
+     if(selectedOptions.childNodes.length < 1){
+      selectedOptions.classList.add('selected-options-field');
+      dropdownInput.removeAttribute('placeholder');
+     }else{
+      selectedOptions.classList.remove('selected-options-field');
+     }
+})
+
+  // window.addEventListener('click', function(e){
+  //     let targetClasses = e.target.classList,
+  //         options = dropdownMenu.querySelectorAll('.option'),
+  //         noResults = document.getElementsByClassName('no-results')[0],
+  //         classNames = ['multiselect', 'selected-options', 'dropdown-input', 'option', 'option-txt', 'selected-option', 'remove-button', 'dropdown'];
+  //     if(classNames.some(className => targetClasses.contains(className))){
+  //         return true;
+  //     }else{
+  //             dropdown.classList.remove('open');
+  //             multiselectBox.classList.remove('dropbox-active');
+  //             dropdownMenu.classList.remove('dropdown-focus');
+  //             selectedOptions.classList.add('drop-box-closed');
+  //             dropdownInput.classList.add('drop-box-closed');
+  //             if(dropdownInput.value){
+  //               dropdownInput.value = '';
+  //               options.forEach(function(option){
+  //                 if(option.classList.contains('opt-hide')){
+  //                   option.classList.remove('opt-hide')
+  //                 }
+  //               });
+  //               noResults.remove();
+  //             }
+  //         }
+  //    if(selectedOptions.childNodes.length < 1){
+  //     selectedOptions.classList.add('selected-options-field');
+  //     dropdownInput.removeAttribute('placeholder');
+  //    }else{
+  //     selectedOptions.classList.remove('selected-options-field');
+  //    }     
+  // })
+
+// Initialize the dropdown options
+createDropdownOptions();
+
+        
+        
+        </script></body></html>
