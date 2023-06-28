@@ -106,7 +106,7 @@
     .wf-field-error-active.wf-field .wf-field-error {
         display: block;
     }
-    .wf-field-error-active.wf-field .wf-field-input {
+    .wf-field-error-active.wf-field .wf-field-input, .wf-field-error-active.wf-field .multiselect {
         border: 1px solid #FD6B6D;
         box-shadow: 0 0 1px 1px #F4A2A2;
     }
@@ -370,6 +370,7 @@
         border-radius: 15px;
         margin: 5px 5px 0 2px;
         display: inline-flex;
+        max-width: 96%;
     }
     .tag-data-val{
         cursor: default;
@@ -1031,28 +1032,18 @@
               </div>
               <div class="wf-row">  
                    <div class="wf-label">multi pick</div>
-                   <div class="wf-field">
-                    <div class="wf-field wf-field-mandatory">
+                    <div class="wf-field wf-field-mandatory multiselect-parent">
                         <div class="wf-field-inner">
-                        <!-- <select multiple="" name="CONTACTCF2" class="wf-field-item wf-field-dropdown" data-wform-field="select-multiple" onchange="removeError(this);">
-                             <option value="fasdf">fasdf</option>
-                             <option value="dfgfasfd">dfgfasfd</option>
-                             <option value="asdfgsdfas">asdfgsdfas</option>
-                             <option value="asdfasfasdf">asdfasfasdf</option>
-                             <option value="ghfgrr">ghfgrr</option>
-                             <option value="asdgassdf">asdgassdf</option>
-                        </select> -->
                             <div class="multiselect wf-field-dropdown" onclick="showTheDropDown()">
                                 <div class="selected-options wf-field-item selected-options-field dN"></div>
                                 <div class="dropdown">
-                                <input type="text" class="dropdown-input input-not-active"/>
+                                <input type="text" fvalidate="true" name="CONTACTCF2" class="dropdown-input input-not-active wf-field-item wf-field-input" data-wform-field="select-multiple" oninput="removeError(this)">
                                 <ul class="dropdown-menu">
                                 </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                   </div>
               </div>
               <div class="wf-row wf-btn-row">
                    <div class="wf-label" data-ux-empty-label="true"></div>
@@ -1064,8 +1055,8 @@
         </div>
     </div>
     <script>
-           var mndFileds=new Array('First\x20Name','Last\x20Name','Email','Mobile','Phone','Home\x20Phone','Description','Mailing\x20Street','CONTACTCF1','CONTACTCF81','CONTACTCF51','CONTACTCF66','CONTACTCF4','CONTACTCF5','CONTACTCF116','CONTACTCF117','CONTACTCF8','CONTACTCF9','CONTACTCF10','CONTACTCF67','CONTACTCF82','CONTACTCF118','CONTACTCF3','CONTACTCF11','CONTACTCF12');
-           var fldLangVal=new Array('First\x20Name','Last\x20Name','Email','Mobile','Phone','Home\x20Phone','Description','Mailing\x20Street','pick','datee','numb','currencysd','mail','phonee','date\x20time','date\x20time\x2024hrs','textarea\x20\x2D\x20new','select\x20\x2D\x20new','Multi\x2Dselect\x20\x2D\x20new','currnecy\x20\x2D\x20new','date\x20\x2D\x20new','date\x20time\x20\x2D\x20new','email\x20\x2D\x20new','phone\x20\x2D\x20new','url\x20\x2D\x20new');
+           var mndFileds=new Array('First\x20Name','Last\x20Name','Email','Mobile','Phone','Home\x20Phone','Description','Mailing\x20Street','CONTACTCF1','CONTACTCF81','CONTACTCF51','CONTACTCF66','CONTACTCF4','CONTACTCF5','CONTACTCF116','CONTACTCF117','CONTACTCF8','CONTACTCF9','CONTACTCF10','CONTACTCF67','CONTACTCF82','CONTACTCF118','CONTACTCF3','CONTACTCF11','CONTACTCF12','CONTACTCF2');
+           var fldLangVal=new Array('First\x20Name','Last\x20Name','Email','Mobile','Phone','Home\x20Phone','Description','Mailing\x20Street','pick','datee','numb','currencysd','mail','phonee','date\x20time','date\x20time\x2024hrs','textarea\x20\x2D\x20new','select\x20\x2D\x20new','Multi\x2Dselect\x20\x2D\x20new','currnecy\x20\x2D\x20new','date\x20\x2D\x20new','date\x20time\x20\x2D\x20new','email\x20\x2D\x20new','phone\x20\x2D\x20new','url\x20\x2D\x20new','Multi\x2Dselect\x20\x2D\x20new');
           var wfInnerWidth = window.innerWidth;
           if(wfInnerWidth <= 768){
                document.forms['BiginWebToRecordForm1669156000000981002'].setAttribute('data-ux-form-alignment', 'top');
@@ -1081,7 +1072,7 @@
               }
          }
          function setError(fieldObj, label) {
-              var parentElement = fieldObj.parentElement.parentElement,
+              var parentElement = fieldObj.closest('.wf-field'),
                   childEle = parentElement.getElementsByClassName('wf-field-error')[0];
               if(!childEle) {
                    var spanEle = document.createElement('SPAN');
@@ -1181,235 +1172,235 @@
     
            
     </script>
-          <script id="wf_script" src="./WebFormServeServlet_files/WebformScriptServlet"></script><script>var formname = document.BiginWebToRecordForm; if(!formname){ formname = document.BiginWebToRecordForm1669156000000981002 } if(!formname){ formname = document.BiginWebToContactForm1669156000000981002 } if(!formname){ formname = document.WebToContacts1669156000000981002 } formname.action = 'https://biginqa.localzoho.com/crm/WebForm';formname.className = formname.className + ' wf-form-paid';function validateForm() {  return validateForm1669156000000981002();  }function validateForm1669156000000981002() {  if((typeof checkMandatory !== 'undefined' && checkMandatory()) || (typeof checkMandatory1669156000000981002 !== 'undefined' && checkMandatory1669156000000981002())) {var formname = document.BiginWebToRecordForm; if(!formname){ formname = document.BiginWebToRecordForm1669156000000981002 }  formname.submit();  }else{  event.preventDefault();  return false;  }  }
-        // Get the dropdown elements
-var dropdown = document.getElementsByClassName('dropdown')[0],
-    dropdownInput = document.getElementsByClassName('dropdown-input')[0],
-    multiselectBox = document.getElementsByClassName('multiselect')[0],
-    dropdownMenu = document.querySelector('.dropdown-menu'),
- // Get the selected options container
-    selectedOptions = document.getElementsByClassName('selected-options')[0],
-// Options data
-    optionsData = ['Arun', 'Muthukumar', 'Kishore', 'Velkumar', 'Bala', 'Zoom', 'Leonardo', 'Paul', 'Avul Pakir Jainulabdeen Abdul Kalam', 'Ragnor Jeralutheen ratcha viswa parish throwkings viveks sattarj', 'Wolverine', 'Goku', 'Rocky'];
-
-// Showing Dropdown
-function showTheDropDown(){
-    if(dropdownMenu.childElementCount === 0){
-      multiselectBox.classList.remove('dropbox-active');
-      selectedOptions.classList.add('drp-dwn-no-val');
-      return false;
-    }
-    dropdown.classList.add('open');
-    selectedOptions.classList.remove('drop-box-closed', 'drp-dwn-no-val', 'selected-options-field');
-    multiselectBox.classList.add('dropbox-active');
-    dropdownMenu.classList.add('dropdown-focus');
-    dropdownInput.classList.remove('input-not-active', 'drop-box-closed');
-    dropdownInput.setAttribute('placeholder', 'Search Here');
-    dropdownInput.focus();
-} 
-
-// Create options dynamically
-function createDropdownOptions() {
-  // Clear the dropdown menu
-  dropdownMenu.innerHTML = '';
-
-  optionsData.forEach(function(optionValue) {
-    if (!selectedOptionsData.includes(optionValue)) {
-      var optionContainer = document.createElement('div');
-      optionContainer.classList.add('option');
-
-      var optionTag = document.createElement('span');
-      optionTag.textContent = optionValue;
-      optionTag.dataset.value = optionValue;
-      optionTag.classList.add('option-txt');
-      optionContainer.appendChild(optionTag);
-      dropdownMenu.appendChild(optionContainer);
-    }
-  });
-
-  // Add event listener to the options in the dropdown
-  var options = dropdownMenu.querySelectorAll('.option');
-  options.forEach(function(option) {
-    option.addEventListener('click', function() {
-      var optionValue = this.querySelector('span').dataset.value;
-      addSelectedOption(optionValue);
-      if(selectedOptions.childElementCount > 0){
-        selectedOptions.classList.remove('dN');
-        dropdownInput.classList.add('drop-box-active');
-      }
-      // Checking drop-down value is empty or not to remove search
-      if(dropdownMenu.childElementCount === 0){
-        dropdown.classList.add('dN');
-      }
-      // Remove the option from the dropdown
-    //   dropdownMenu.removeChild(this);
-    });
-  });
-}
-
-// Store the selected options
-var selectedOptionsData = [];
-
-// Function to add selected option
-function addSelectedOption(optionValue) {
-  if (!selectedOptionsData.includes(optionValue)) {
-    selectedOptionsData.push(optionValue);
-
-    // Add selected option to the container
-    var optionContainer = document.createElement('div');
-    optionContainer.classList.add('selected-option', 'multi-tag');
-
-    var optionTag = document.createElement('span');
-    optionTag.classList.add('tag-data-val', 'ellipsis');
-    optionTag.textContent = optionValue;
-    optionTag.dataset.value = optionValue;
-    optionContainer.appendChild(optionTag);
-
-    var removeButton = document.createElement('span');
-    removeButton.textContent = 'x';
-    removeButton.classList.add('remove-button', 'tag-close-btn');
-    removeButton.addEventListener('click', function() {
-      var optionContainer = this.parentNode,
-        optionValue = optionContainer.querySelector('span').dataset.value;
-      // Remove the selected option from the container
-      selectedOptions.removeChild(optionContainer);
-      // Remove the option from the selected options
-      var index = selectedOptionsData.indexOf(optionValue);
-      if (index > -1) {
-        selectedOptionsData.splice(index, 1);
-      }
-      // Checking selected Options div whether Children is appended or not
-      if(selectedOptions.childElementCount === 0){
-        selectedOptions.classList.add('dN');
-        dropdownInput.classList.remove('drop-box-active');
-      }
-      // Checking drop-down value is empty or not to add search
-        if(dropdown.classList.contains('dN')){
-          dropdown.classList.remove('dN');
-        }
-      // Clear the dropdown menu and re-create the options
-      createDropdownOptions();
-    });
-
-    optionContainer.appendChild(removeButton);
-    selectedOptions.appendChild(optionContainer);
-  }
-  dropdownInput.value = ''; // Clear the input field
-  dropdownInput.focus(); // Set focus back to the input field
-
-  // Clear the dropdown menu and re-create the options
-  createDropdownOptions();
-}
-
-// Add event listener to the dropdown input
-dropdownInput.addEventListener('input', function() {
-  var searchText = dropdownInput.value.toLowerCase(),
-      noResults = document.getElementsByClassName('no-results')[0],
-      div = document.createElement('div'),
-      span = document.createElement('span'),
-      options = dropdownMenu.querySelectorAll('.option');
-
-      span.setAttribute('data-value', 'No results');
-      div.setAttribute('class', 'option no-results');
-      div.textContent = 'No options found';
-  options.forEach(function(option) {
-    let optionValue = option.querySelector('span').dataset.value.toLowerCase();
-    if (optionValue.includes(searchText)) {
-      option.classList.add('opt-show');
-      option.classList.remove('opt-hide');
-    } else {
-      option.classList.remove('opt-show');
-      option.classList.add('opt-hide');
-    }
-  });
-  // Adding No results found when no option is to find
-  for(i = 0; i < options.length; i++){
-    if(options[i].classList.contains('opt-hide')){
-      if(i == options.length - 1){
-        div.appendChild(span); 
-        if(options[i].classList.contains('no-results')){
-          if(noResults.classList.contains('opt-hide')){
-            noResults.classList.remove('opt-hide');
-          }
-          return false;
-        }else{
-          dropdownMenu.appendChild(div);
-        }
-      }
-    }else{
-      if(noResults) {
-        noResults.remove();
-      }
-      return false
-    }
-  }
-});
-// Closing dropdown & removind focus border on outside clicks
-document.addEventListener('click', function(e){
-  let targetClasses = e.target.classList,
-          options = dropdownMenu.querySelectorAll('.option'),
-          noResults = document.getElementsByClassName('no-results')[0],
-          classNames = ['multiselect', 'selected-options', 'dropdown-input', 'option', 'option-txt', 'selected-option', 'remove-button', 'dropdown'];
-      if(classNames.some(className => targetClasses.contains(className))){
-          return true;
-      }else{
-              dropdown.classList.remove('open');
-              multiselectBox.classList.remove('dropbox-active');
-              dropdownMenu.classList.remove('dropdown-focus');
-              selectedOptions.classList.add('drop-box-closed');
-              dropdownInput.classList.add('drop-box-closed');
-              if(dropdownInput.value){
-                dropdownInput.value = '';
-                options.forEach(function(option){
-                  if(option.classList.contains('opt-hide')){
-                    option.classList.remove('opt-hide')
+          <script id="wf_script" src="./WebFormServeServlet_files/WebformScriptServlet"></script><script>var formname = document.BiginWebToRecordForm; if(!formname){ formname = document.BiginWebToRecordForm1669156000000981002 } if(!formname){ formname = document.BiginWebToContactForm1669156000000981002 } if(!formname){ formname = document.WebToContacts1669156000000981002 } formname.action = 'https://biginqa.localzoho.com/crm/WebForm';formname.className = formname.className + ' wf-form-paid';function validateForm() {  return validateForm1669156000000981002();  }function validateForm1669156000000981002() {  if((typeof checkMandatory !== 'undefined' && checkMandatory()) || (typeof checkMandatory1669156000000981002 !== 'undefined' && checkMandatory1669156000000981002())) {var formname = document.BiginWebToRecordForm; if(!formname){ formname = document.BiginWebToRecordForm1669156000000981002 }  formname.submit();  }else{  event.preventDefault();  return false;  }  }</script><script>// Get the dropdown elements
+            var dropdown = document.getElementsByClassName('dropdown')[0],
+                dropdownInput = document.getElementsByClassName('dropdown-input')[0],
+                multiselectBox = document.getElementsByClassName('multiselect')[0],
+                dropdownMenu = document.querySelector('.dropdown-menu'),
+                multiSelectPar = document.getElementsByClassName('multiselect-parent')[0],
+             // Get the selected options container
+                selectedOptions = document.getElementsByClassName('selected-options')[0],
+            // Options data
+                optionsData = ['Arun', 'Muthukumar', 'Kishore', 'Velkumar', 'Bala', 'Zoom', 'Leonardo', 'Paul', 'Avul Pakir Jainulabdeen Abdul Kalam', 'Ragnor', 'Wolverine', 'Goku', 'Rocky'];
+            
+            // Showing Dropdown
+            function showTheDropDown(){
+                if(dropdownMenu.childElementCount === 0){
+                  multiselectBox.classList.remove('dropbox-active');
+                  selectedOptions.classList.add('drp-dwn-no-val');
+                  return false;
+                }
+                dropdown.classList.add('open');
+                selectedOptions.classList.remove('drop-box-closed', 'drp-dwn-no-val', 'selected-options-field');
+                multiselectBox.classList.add('dropbox-active');
+                dropdownMenu.classList.add('dropdown-focus');
+                dropdownInput.classList.remove('input-not-active', 'drop-box-closed');
+                dropdownInput.setAttribute('placeholder', 'Search Here');
+                dropdownInput.focus();
+                if(multiSelectPar.classList.contains('wf-field-error-active')){
+                  multiSelectPar.classList.remove('wf-field-error-active');
+                }
+            } 
+            
+            // Create options dynamically
+            function createDropdownOptions() {
+              // Clear the dropdown menu
+              dropdownMenu.innerHTML = '';
+            
+              optionsData.forEach(function(optionValue) {
+                if (!selectedOptionsData.includes(optionValue)) {
+                  var optionContainer = document.createElement('div');
+                  optionContainer.classList.add('option');
+            
+                  var optionTag = document.createElement('span');
+                  optionTag.textContent = optionValue;
+                  optionTag.dataset.value = optionValue;
+                  optionTag.classList.add('option-txt');
+                  optionContainer.appendChild(optionTag);
+                  dropdownMenu.appendChild(optionContainer);
+                }
+              });
+            
+              // Add event listener to the options in the dropdown
+              var options = dropdownMenu.querySelectorAll('.option');
+              options.forEach(function(option) {
+                option.addEventListener('click', function() {
+                  var optionValue = this.querySelector('span').dataset.value;
+                  addSelectedOption(optionValue);
+                  if(selectedOptions.childElementCount > 0){
+                    selectedOptions.classList.remove('dN');
+                    dropdownInput.classList.add('drop-box-active');
                   }
+                  // Checking drop-down value is empty or not to remove search
+                  if(dropdownMenu.childElementCount === 0){
+                    dropdown.classList.add('dN');
+                  }
+                  // Remove the option from the dropdown
+                //   dropdownMenu.removeChild(this);
                 });
-                noResults.remove();
+              });
+            }
+            
+            // Store the selected options
+            var selectedOptionsData = [];
+            
+            // Function to add selected option
+            function addSelectedOption(optionValue) {
+              if (!selectedOptionsData.includes(optionValue)) {
+                selectedOptionsData.push(optionValue);
+            
+                // Add selected option to the container
+                var optionContainer = document.createElement('div');
+                optionContainer.classList.add('selected-option', 'multi-tag');
+            
+                var optionTag = document.createElement('span');
+                optionTag.classList.add('tag-data-val', 'ellipsis');
+                optionTag.textContent = optionValue;
+                optionTag.dataset.value = optionValue;
+                optionContainer.appendChild(optionTag);
+            
+                var removeButton = document.createElement('span');
+                removeButton.textContent = 'x';
+                removeButton.classList.add('remove-button', 'tag-close-btn');
+                removeButton.addEventListener('click', function() {
+                  var optionContainer = this.parentNode,
+                    optionValue = optionContainer.querySelector('span').dataset.value;
+                  // Remove the selected option from the container
+                  selectedOptions.removeChild(optionContainer);
+                  // Remove the option from the selected options
+                  var index = selectedOptionsData.indexOf(optionValue);
+                  if (index > -1) {
+                    selectedOptionsData.splice(index, 1);
+                  }
+                  // Checking selected Options div whether Children is appended or not
+                  if(selectedOptions.childElementCount === 0){
+                    selectedOptions.classList.add('dN');
+                    dropdownInput.classList.remove('drop-box-active');
+                  }
+                  // Checking drop-down value is empty or not to add search
+                    if(dropdown.classList.contains('dN')){
+                      dropdown.classList.remove('dN');
+                    }
+                  // Clear the dropdown menu and re-create the options
+                  createDropdownOptions();
+                });
+            
+                optionContainer.appendChild(removeButton);
+                selectedOptions.appendChild(optionContainer);
               }
-          }
-     if(selectedOptions.childNodes.length < 1){
-      selectedOptions.classList.add('selected-options-field');
-      dropdownInput.removeAttribute('placeholder');
-     }else{
-      selectedOptions.classList.remove('selected-options-field');
-     }
-})
-
-  // window.addEventListener('click', function(e){
-  //     let targetClasses = e.target.classList,
-  //         options = dropdownMenu.querySelectorAll('.option'),
-  //         noResults = document.getElementsByClassName('no-results')[0],
-  //         classNames = ['multiselect', 'selected-options', 'dropdown-input', 'option', 'option-txt', 'selected-option', 'remove-button', 'dropdown'];
-  //     if(classNames.some(className => targetClasses.contains(className))){
-  //         return true;
-  //     }else{
-  //             dropdown.classList.remove('open');
-  //             multiselectBox.classList.remove('dropbox-active');
-  //             dropdownMenu.classList.remove('dropdown-focus');
-  //             selectedOptions.classList.add('drop-box-closed');
-  //             dropdownInput.classList.add('drop-box-closed');
-  //             if(dropdownInput.value){
-  //               dropdownInput.value = '';
-  //               options.forEach(function(option){
-  //                 if(option.classList.contains('opt-hide')){
-  //                   option.classList.remove('opt-hide')
-  //                 }
-  //               });
-  //               noResults.remove();
-  //             }
-  //         }
-  //    if(selectedOptions.childNodes.length < 1){
-  //     selectedOptions.classList.add('selected-options-field');
-  //     dropdownInput.removeAttribute('placeholder');
-  //    }else{
-  //     selectedOptions.classList.remove('selected-options-field');
-  //    }     
-  // })
-
-// Initialize the dropdown options
-createDropdownOptions();
-
-        
-        
-        </script></body></html>
+              dropdownInput.value = ''; // Clear the input field
+              dropdownInput.focus(); // Set focus back to the input field
+            
+              // Clear the dropdown menu and re-create the options
+              createDropdownOptions();
+            }
+            
+            // Add event listener to the dropdown input
+            dropdownInput.addEventListener('input', function() {
+              var searchText = dropdownInput.value.toLowerCase(),
+                  noResults = document.getElementsByClassName('no-results')[0],
+                  div = document.createElement('div'),
+                  span = document.createElement('span'),
+                  options = dropdownMenu.querySelectorAll('.option');
+            
+                  span.setAttribute('data-value', 'No results');
+                  div.setAttribute('class', 'option no-results');
+                  div.textContent = 'No options found';
+              options.forEach(function(option) {
+                let optionValue = option.querySelector('span').dataset.value.toLowerCase();
+                if (optionValue.includes(searchText)) {
+                  option.classList.add('opt-show');
+                  option.classList.remove('opt-hide');
+                } else {
+                  option.classList.remove('opt-show');
+                  option.classList.add('opt-hide');
+                }
+              });
+              // Adding No results found when no option is to find
+              for(i = 0; i < options.length; i++){
+                if(options[i].classList.contains('opt-hide')){
+                  if(i == options.length - 1){
+                    div.appendChild(span); 
+                    if(options[i].classList.contains('no-results')){
+                      if(noResults.classList.contains('opt-hide')){
+                        noResults.classList.remove('opt-hide');
+                      }
+                      return false;
+                    }else{
+                      dropdownMenu.appendChild(div);
+                    }
+                  }
+                }else{
+                  if(noResults) {
+                    noResults.remove();
+                  }
+                  return false
+                }
+              }
+            });
+            // Closing dropdown & removind focus border on outside clicks
+            document.addEventListener('click', function(e){
+              let targetClasses = e.target.classList,
+                      options = dropdownMenu.querySelectorAll('.option'),
+                      noResults = document.getElementsByClassName('no-results')[0],
+                      classNames = ['multiselect', 'selected-options', 'dropdown-input', 'option', 'option-txt', 'selected-option', 'remove-button', 'dropdown'];
+                  if(classNames.some(className => targetClasses.contains(className))){
+                      return true;
+                  }else{
+                          dropdown.classList.remove('open');
+                          multiselectBox.classList.remove('dropbox-active');
+                          dropdownMenu.classList.remove('dropdown-focus');
+                          selectedOptions.classList.add('drop-box-closed');
+                          dropdownInput.classList.add('drop-box-closed');
+                          if(dropdownInput.value){
+                            dropdownInput.value = '';
+                            options.forEach(function(option){
+                              if(option.classList.contains('opt-hide')){
+                                option.classList.remove('opt-hide')
+                              }
+                            });
+                            noResults.remove();
+                          }
+                      }
+                 if(selectedOptions.childNodes.length < 1){
+                  selectedOptions.classList.add('selected-options-field');
+                  dropdownInput.removeAttribute('placeholder');
+                 }else{
+                  selectedOptions.classList.remove('selected-options-field');
+                 }
+            })
+            
+              // window.addEventListener('click', function(e){
+              //     let targetClasses = e.target.classList,
+              //         options = dropdownMenu.querySelectorAll('.option'),
+              //         noResults = document.getElementsByClassName('no-results')[0],
+              //         classNames = ['multiselect', 'selected-options', 'dropdown-input', 'option', 'option-txt', 'selected-option', 'remove-button', 'dropdown'];
+              //     if(classNames.some(className => targetClasses.contains(className))){
+              //         return true;
+              //     }else{
+              //             dropdown.classList.remove('open');
+              //             multiselectBox.classList.remove('dropbox-active');
+              //             dropdownMenu.classList.remove('dropdown-focus');
+              //             selectedOptions.classList.add('drop-box-closed');
+              //             dropdownInput.classList.add('drop-box-closed');
+              //             if(dropdownInput.value){
+              //               dropdownInput.value = '';
+              //               options.forEach(function(option){
+              //                 if(option.classList.contains('opt-hide')){
+              //                   option.classList.remove('opt-hide')
+              //                 }
+              //               });
+              //               noResults.remove();
+              //             }
+              //         }
+              //    if(selectedOptions.childNodes.length < 1){
+              //     selectedOptions.classList.add('selected-options-field');
+              //     dropdownInput.removeAttribute('placeholder');
+              //    }else{
+              //     selectedOptions.classList.remove('selected-options-field');
+              //    }     
+              // })
+            
+            // Initialize the dropdown options
+            createDropdownOptions();
+            </script></body></html>
